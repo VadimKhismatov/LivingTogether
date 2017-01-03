@@ -1,0 +1,106 @@
+/*top menu*/
+.top_menu{
+    padding: 10px 0 0 32px;
+}
+.menu--top{
+    margin-bottom: 6px;
+}
+.menu_item{
+    display: flex;
+}
+.menu_item--polls{
+    margin: 0px 0 0px 24px;
+}
+.menu_item--comunication{
+    margin: 0 0 0px 45px;
+}
+
+.menu_item--invest{
+    margin: 0 0 0 40px;
+}
+
+.menu_item--contacts{
+    margin: 0 0 0 51px;
+}
+
+.menu_item--partners_livingtogether{
+     margin: 0 0 0 20px;
+}
+
+.menu_item--question{
+    margin: 0 0 0 13px;
+}
+
+.menu_item--typical_decoration{
+    margin: 0 0px 0 26px;
+}
+
+.menu_item--club_cart{
+    margin: 0 0 0 18px;
+}
+.menu__img{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu__img--rent{background-image: url("../icons/rent.png");margin: 0 3px 0px 0px;background-position: 4px 2px;}
+
+.menu__img--polls{background-image: url("../icons/polls.png");margin: 0 8px 0 0px;background-position: 5px 3px;}
+
+.menu__img--communication{background-image: url("../icons/communication.png");margin: 0 3px 0 0;background-position: 1px 0px;}
+
+.menu__img--invest{background-image: url("../icons/invest.png");margin: 0 5px 0 0px;background-position: 3px 2px;}
+
+.menu__img--contacts{background-image: url("../icons/contacts.png");margin: 0 8px 0 0;background-position: 2px 2px;}
+
+.menu__img--news{background-image: url("../icons/news.png"); margin: 0 1px 0 0;background-position: -7px center;}
+
+.menu__img--partners_livingtigether{background-image: url("../icons/partners_of_liivingtogether.png");margin: 0 8px 0 0;background-position: 1px -2px;}
+
+.menu__img--question{background-image: url("../icons/question.png");margin: 0 3px 0 0px;}
+
+.menu__img--typical_decoration{background-image: url("../icons/typical-decoration.png");margin: 0 4px 0 0;}
+
+.menu__img--club_cart{background-image: url("../icons/club-cart.png");margin: 0 7px 0 0;background-position: 2px 3px;}
+
+
+.menu__link{
+    font-family: "Geneva", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #2b2b2b;
+    letter-spacing: 0.4px;
+}
+.menu__link--rent{
+    letter-spacing: 0.3px;
+}
+
+.menu__link--communication{
+    letter-spacing: 0.1px;
+}
+
+.menu__link--invest{
+    letter-spacing: 0.2px;
+}
+
+.menu__link--contacts{
+    letter-spacing: 0.6px;
+}
+
+.menu__link--question{
+    font-size: 11px;
+    padding-top: 2px;
+    letter-spacing: 0.2px;
+}
+.menu__link--typical_decoration{
+    padding-top: 1px;
+    letter-spacing: 0.7px;
+}
+
+.menu__link--club_cart{
+    padding-top: 1px;
+    letter-spacing: 0.6px;
+}

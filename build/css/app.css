@@ -1,0 +1,267 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, fieldset, a img {
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.icon-facebook {
+  width: 0.53em;
+  height: 1em;
+  fill: #000;
+}
+
+@font-face {
+  font-family: "Geneva";
+  font-weight: 300;
+  src: url("../fonts/geneva-webfont.woff2") format("woff2"), url("../fonts/geneva-webfont.woff") format("woff");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+body {
+  background: #FFF;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.container {
+  width: 1150px;
+}
+
+header {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 70px;
+  background-image: url("../img/sky-bg.png");
+  background-repeat: no-repeat;
+  background-position: 297px -319px;
+}
+
+.block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*top menu*/
+.top_menu {
+  padding: 10px 0 0 32px;
+}
+
+.menu--top {
+  margin-bottom: 6px;
+}
+
+.menu_item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu_item--polls {
+  margin: 0px 0 0px 24px;
+}
+
+.menu_item--comunication {
+  margin: 0 0 0px 45px;
+}
+
+.menu_item--invest {
+  margin: 0 0 0 40px;
+}
+
+.menu_item--contacts {
+  margin: 0 0 0 51px;
+}
+
+.menu_item--partners_livingtogether {
+  margin: 0 0 0 20px;
+}
+
+.menu_item--question {
+  margin: 0 0 0 13px;
+}
+
+.menu_item--typical_decoration {
+  margin: 0 0px 0 26px;
+}
+
+.menu_item--club_cart {
+  margin: 0 0 0 18px;
+}
+
+.menu__img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu__img--rent {
+  background-image: url("../icons/rent.png");
+  margin: 0 3px 0px 0px;
+  background-position: 4px 2px;
+}
+
+.menu__img--polls {
+  background-image: url("../icons/polls.png");
+  margin: 0 8px 0 0px;
+  background-position: 5px 3px;
+}
+
+.menu__img--communication {
+  background-image: url("../icons/communication.png");
+  margin: 0 3px 0 0;
+  background-position: 1px 0px;
+}
+
+.menu__img--invest {
+  background-image: url("../icons/invest.png");
+  margin: 0 5px 0 0px;
+  background-position: 3px 2px;
+}
+
+.menu__img--contacts {
+  background-image: url("../icons/contacts.png");
+  margin: 0 8px 0 0;
+  background-position: 2px 2px;
+}
+
+.menu__img--news {
+  background-image: url("../icons/news.png");
+  margin: 0 1px 0 0;
+  background-position: -7px center;
+}
+
+.menu__img--partners_livingtigether {
+  background-image: url("../icons/partners_of_liivingtogether.png");
+  margin: 0 8px 0 0;
+  background-position: 1px -2px;
+}
+
+.menu__img--question {
+  background-image: url("../icons/question.png");
+  margin: 0 3px 0 0px;
+}
+
+.menu__img--typical_decoration {
+  background-image: url("../icons/typical-decoration.png");
+  margin: 0 4px 0 0;
+}
+
+.menu__img--club_cart {
+  background-image: url("../icons/club-cart.png");
+  margin: 0 7px 0 0;
+  background-position: 2px 3px;
+}
+
+.menu__link {
+  font-family: "Geneva", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #2b2b2b;
+  letter-spacing: 0.4px;
+}
+
+.menu__link--rent {
+  letter-spacing: 0.3px;
+}
+
+.menu__link--communication {
+  letter-spacing: 0.1px;
+}
+
+.menu__link--invest {
+  letter-spacing: 0.2px;
+}
+
+.menu__link--contacts {
+  letter-spacing: 0.6px;
+}
+
+.menu__link--question {
+  font-size: 11px;
+  padding-top: 2px;
+  letter-spacing: 0.2px;
+}
+
+.menu__link--typical_decoration {
+  padding-top: 1px;
+  letter-spacing: 0.7px;
+}
+
+.menu__link--club_cart {
+  padding-top: 1px;
+  letter-spacing: 0.6px;
+}
+
+/*# sourceMappingURL=app.css.map */
