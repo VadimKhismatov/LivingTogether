@@ -1,0 +1,37 @@
+.news{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+.news_panel{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 38px 0 38px;
+}
+
+.news__item{
+    font-family: "Geneva", sans-serif;
+    font-weight: 300;
+    color: #2b2b2b;
+    font-size: 13px;
+}
+
+.news__item_data_link{
+    text-decoration: none;
+    color: #1a9dd7;
+    font-size: 12px;
+}
+
+.news__item_text{
+    width: 320px;
+}
+
+.news__item_full_link{
+    font-family: "Geneva", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #2b2b2b;
+    opacity: .4;
+    letter-spacing: 0.4px;
+}
