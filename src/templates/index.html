@@ -1,7 +1,7 @@
  {% extends "layouts/_layout.html" %} {% block content %}
 <!--HEADER begin-->
 <header class="block">
-	<section class="container block">
+	<section class="container container--head  block">
 		<!--LOGO begin-->
 		<div class="logo">
 			<img src="../img/logo.png" />
@@ -41,11 +41,21 @@
 <!--NEWS BLOCK begin-->
 <section class="news_block block">
 	<section class="container block">
-		
+
 		{% include "partials/_newsblock.html" %}
 
 	</section>
 </section>
 <!--NEWS BLOCK end-->
+
+<!--PARTNERS BLOCK begin-->
+<section class="partners_block block">
+	<section class="container block">
+
+		{% include "partials/_newsblock.html" %}
+
+	</section>
+</section>
+<!--PARTNERS BLOCK end-->
 
 {% endblock %}

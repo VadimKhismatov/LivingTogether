@@ -1,7 +1,7 @@
 .main-info{
-    width: 744px;
+    width: 708px;
     color: #2b2b2b;
-    padding: 46px 0 0 86px;
+    padding: 45px 0 0 21px;
 }
 
 .main-info__text{
@@ -23,10 +23,11 @@
     position: relative;
     margin-bottom: 2px;
     padding-left: 20px;
+
     &::before{
-        content: "—";
+        content: "-";
         position: absolute;
-        left:0px;
+        left:8px;
     }
 }
 
@@ -39,13 +40,13 @@
 }
 .support{
     display: flex;
-    padding: 2px 0 0 41px;
+    padding: 1px 0 0 11px;
 }
 
 .support__img{
     width: 48px;
     height: 48px;
-    margin-top: 13px;
+    margin-top: 12px;
 }
 
 .support__telephones{
@@ -77,7 +78,7 @@
 }
 
 .club{
-    padding: 21px 0 0 29px;
+    padding: 21px 0 0 0px;
     color:#2b2b2b;
 }
 
@@ -89,7 +90,7 @@
     font-family: "Proxima Nova Bold", sans-serif;
     font-weight: bold;
     font-size: 23px;
-    letter-spacing: -0.7px;
+    letter-spacing: -0.3px;
 }
 
 .club__text{

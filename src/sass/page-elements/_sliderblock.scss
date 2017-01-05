@@ -1,7 +1,7 @@
 .column{
     flex-direction: column;
     align-items: center;
-    width:357px;
+    width:339px;
     padding: 41px 0 0 0px;
     position: relative;
 }
@@ -16,7 +16,7 @@
 }
 
 .slider_block__link--left{
-        top: 366px;
+    top: 366px;
     left: 363px;
 }
 .slider_block__link--right{
@@ -26,7 +26,7 @@
 }
 
 .head{
-    width: 246px;
+    width: 100%;
     color: #2b2b2b;
     padding-left:8px;
 }
@@ -34,21 +34,22 @@
 .head__type{
     font-family: "Proxima Nova Semibold", sans-serif;
     font-size: 24px;
-    letter-spacing: -1px;
     padding: 0 0 0 3px;
 }
 
 .head__title{
+    width: 246px;
     font-family: "Proxima Nova Bold", sans-serif;
     font-weight: bold;
     font-size: 40px;
     color: #f8b22b;
     line-height: 31px;
-    letter-spacing: -2.1px;
+    letter-spacing: -0.9px;
 }
 
 .column__img{
-    margin: 9px 0 0 51px;
+    
+    margin: 9px 0 0 0px;
     z-index: -1;
 }
 
@@ -60,25 +61,31 @@
     border-radius: 50%;
     background-image: url("../img/vatutino-extra.png");
     position: absolute;
-    top: 205px;
-    left: 37px;
+    top: 221px;
+    left: 17px;
 }
 
 /*form*/
 
-.form_wrapper{
+/*.form_wrapper{
     width:287px;
     height: 152px;
-    margin: 28px 0 0 47px;
+    margin: 21px 0 0 4px;
     padding: 20px 23px 20px 23px;
     background-color: #f3f3f3;
     border-radius: 10px;
-}
+}*/
 
 .authorisation{
+    width:287px;
+    height: 152px;
+    margin: 22px 45px 0 0;
+    padding: 20px 23px 20px 23px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 10px;
 }
 .authorisation__controls_block{
     width: 100%;
@@ -88,7 +95,7 @@
 }
 .authorisation__input{
     width:238px;
-    height: 36px;
+    height: 41px;
     box-sizing: border-box;
     border: 1px solid #d4d4d4;
     border-radius: 7px;
@@ -98,7 +105,7 @@
 }
 
 .authorisation__input--email{
-    margin-bottom: 7px;
+    margin-bottom: 8px;
     background-image: url("../icons/login-person.png");
     background-repeat: no-repeat;
     background-position: 7px 8px;
@@ -150,14 +157,14 @@
     background-image: url("../icons/location-pin.png");
     width: 20px;
     height: 24px;
-    margin: 2px 6px 0 37px;
+    margin: 2px 6px 0 25px;
     background-position: 1px 0px;
     background-repeat: no-repeat;
 }
 
 .location_wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .additional_info__location_link{
@@ -167,13 +174,14 @@
     color: #2b2b2b;
     line-height: 24px;
     margin: 3px 0 0 0;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.5px;
 }
 
 .additional_info__tel{
-    padding: 0 0 0 38px;
+    padding: 1px 0 0 0;
     font-family: "Proxima Nova";
     font-size: 13px;
+    text-align: left;
     color: #2b2b2b;
 }
 

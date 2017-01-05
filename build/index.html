@@ -15,7 +15,7 @@
     <div class="out">
       <!--HEADER begin-->
       <header class="block">
-        <section class="container block">
+        <section class="container container--head  block">
           <!--LOGO begin-->
           <div class="logo"> <img src="../img/logo.png" /> </div>
           <!--LOGO end-->
@@ -53,15 +53,14 @@
             <div class="head">
               <h4 class="head__type">Жилой комплекс</h3>
                 <h1 class="head__title">Одинцовский парк</h1>
-            </div> <img src="../img/park-odintsovo.png" class="column__img" />
-            <div class="form_wrapper">
-              <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта"> <input type="text" class="authorisation__input authorisation__input--login" placeholder="Логин">
-                <div class="authorisation__controls_block">
-                  <div class="authorisation__links_wrapper"> <a href="#!" class="authorisation__links authorisation__fogget_password">Забыли пароль?</a> <a href="#!" class="authorisation__links authorisation__registration">Регистрация</a> </div>
-                  <div> <input type="submit" class="authorisation__submit" value="Войти"> </div>
-                </div>
-              </form>
             </div>
+            <div class="column__img_wrapper"> <img src="../img/park-odintsovo.png" class="column__img" /> </div>
+            <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта"> <input type="text" class="authorisation__input authorisation__input--login" placeholder="Логин">
+              <div class="authorisation__controls_block">
+                <div class="authorisation__links_wrapper"> <a href="#!" class="authorisation__links authorisation__fogget_password">Забыли пароль?</a> <a href="#!" class="authorisation__links authorisation__registration">Регистрация</a> </div>
+                <div> <input type="submit" class="authorisation__submit" value="Войти"> </div>
+              </div>
+            </form>
             <div class="additional_info">
               <p class="additional_info__tel">Продажи <span class="additional_info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
               <div class="location_wrapper">
@@ -74,7 +73,8 @@
             <div class="head">
               <h4 class="head__type">Жилой комплекс</h3>
                 <h1 class="head__title">Новые Ватутинки</h1>
-            </div> <img src="../img/new-vatutino.png" class="column__img" />
+            </div>
+            <div class="column__img_wrapper"> <img src="../img/new-vatutino.png" class="column__img" /> </div>
             <div class="additional_views"></div>
             <div class="form_wrapper">
               <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта"> <input type="text" class="authorisation__input authorisation__input--login" placeholder="Логин">
@@ -96,7 +96,8 @@
             <div class="head">
               <h4 class="head__type">Жилой комплекс</h3>
                 <h1 class="head__title">Новое Бутово</h1>
-            </div> <img src="../img/new-butovo.png" class="column__img" />
+            </div>
+            <div class="column__img_wrapper"> <img src="../img/new-butovo.png" class="column__img" /> </div>
             <div class="form_wrapper">
               <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта"> <input type="text" class="authorisation__input authorisation__input--login" placeholder="Логин">
                 <div class="authorisation__controls_block">
@@ -135,7 +136,7 @@
             </ul>
             </br>
             <p class="main-info__text main-info__paragraf"> И это далеко не всё, что вы можете узнать на сайте: <a href="#!" class="main-info__link">vmeste-bn.ru</a> </br>Нам важно, чтобы Вы жили с комфортом и стали хорошими соседями друг для друга. </br>ВМЕСТЕ мы создаем жилую среду — комплекс, который
-              в будущем будет приносить вам радость и </br>уют. Начиная с покупки квартиры и даже после заселения, мы будем рядом, чтобы помогать благоустраивать ваш жилой комплекс.</br>
+              в будущем будет приносить вам радость и </br>уют. Начиная с покупки квартиры и даже после заселения, мы будем рядом, чтобы помогать</br> благоустраивать ваш жилой комплекс.</br>
               </br>Участвуйте в проекте «Живем вместе», это поможет сделать жизнь вашего дома яркой, насыщенной, </br> и конечно, удобной! Делитесь своими мыслями и предложениями, а мы – «БЕСТ-Новострой»— </br>окажем всевозможное содействие в создании жилья
               Вашей мечты! </p>
           </section>
@@ -165,17 +166,58 @@
           <div class="news">
             <!--NEWS_PANEL begin-->
             <div class="news_panel">
-              <h1 class="news_panel__title">Новости «Живем Вместе»</h1> <a href="#!" class="news_panel__link">Все новости</a> </div>
+              <h1 class="news_panel__title">Новости «Живем Вместе»</h1> <a href="#!" class="news_panel__all_news_link">Все новости</a> </div>
             <!--NEWS_PANEL end-->
-            <!--NEWS ITEM begin-->
-            <div class="news__item">
-              <p class="news__item_data"> <a href="#!" class="news__item_data_link">12 мая 2013</a> </p>
-              <p class="news__item_text"> Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет. </p> <a href="#!" class="news__item_full_link">подробнее</a> </div>
-            <!--NEWS ITEM end-->
+            <div class="news__items_wrapper">
+              <!--NEWS ITEM begin-->
+              <div class="news__item">
+                <p class="news__item_data"> <a href="#!" class="news__item_data_link">12 мая 2013</a> </p>
+                <p class="news__item_text"> Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет. </p> <a href="#!" class="news__item_full_link">подробнее</a> </div>
+              <!--NEWS ITEM end-->
+              <!--NEWS ITEM begin-->
+              <div class="news__item">
+                <p class="news__item_data"> <a href="#!" class="news__item_data_link">12 мая 2013</a> </p>
+                <p class="news__item_text"> Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет. </p> <a href="#!" class="news__item_full_link">подробнее</a> </div>
+              <!--NEWS ITEM end-->
+              <!--NEWS ITEM begin-->
+              <div class="news__item">
+                <p class="news__item_data"> <a href="#!" class="news__item_data_link">12 мая 2013</a> </p>
+                <p class="news__item_text"> Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет. </p> <a href="#!" class="news__item_full_link">подробнее</a> </div>
+              <!--NEWS ITEM end-->
+            </div>
           </div>
         </section>
       </section>
       <!--NEWS BLOCK end-->
+      <!--PARTNERS BLOCK begin-->
+      <section class="partners_block block">
+        <section class="container block">
+          <div class="news">
+            <!--NEWS_PANEL begin-->
+            <div class="news_panel">
+              <h1 class="news_panel__title">Новости «Живем Вместе»</h1> <a href="#!" class="news_panel__all_news_link">Все новости</a> </div>
+            <!--NEWS_PANEL end-->
+            <div class="news__items_wrapper">
+              <!--NEWS ITEM begin-->
+              <div class="news__item">
+                <p class="news__item_data"> <a href="#!" class="news__item_data_link">12 мая 2013</a> </p>
+                <p class="news__item_text"> Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет. </p> <a href="#!" class="news__item_full_link">подробнее</a> </div>
+              <!--NEWS ITEM end-->
+              <!--NEWS ITEM begin-->
+              <div class="news__item">
+                <p class="news__item_data"> <a href="#!" class="news__item_data_link">12 мая 2013</a> </p>
+                <p class="news__item_text"> Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет. </p> <a href="#!" class="news__item_full_link">подробнее</a> </div>
+              <!--NEWS ITEM end-->
+              <!--NEWS ITEM begin-->
+              <div class="news__item">
+                <p class="news__item_data"> <a href="#!" class="news__item_data_link">12 мая 2013</a> </p>
+                <p class="news__item_text"> Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет. </p> <a href="#!" class="news__item_full_link">подробнее</a> </div>
+              <!--NEWS ITEM end-->
+            </div>
+          </div>
+        </section>
+      </section>
+      <!--PARTNERS BLOCK end-->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

@@ -2,23 +2,22 @@
   font-family: "Geneva";
   font-weight: 300;
   src: url('../fonts/geneva-webfont.woff2') format('woff2'),url('../fonts/geneva-webfont.woff') format('woff');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 @font-face {
   font-family: "Proxima Nova Semibold";
-  src: url('../fonts/proxima_nova_semibold-webfont.woff2') format('woff2');
+  src: url('../fonts/proxima_nova_semibold-webfont.woff2') format('woff2'),url('../fonts/proxima_nova_semibold-webfont.woff') format('woff');
   
 }
 
 @font-face {
   font-family: "Proxima Nova Bold";
   font-weight: bold;
-  src: url('../fonts/proxima_nova_bold-webfont.woff2') format('woff2');
+  src: url('../fonts/proxima_nova_bold-webfont.woff2') format('woff2'),url('../fonts/proxima_nova_bold-webfont.woff') format('woff');
   
 }
 @font-face {
   font-family: "Proxima Nova";
-  src: url('../fonts/proxima_nova_regular-webfont.woff2') format('woff2');
+  src: url('../fonts/proxima_nova_regular-webfont.woff2') format('woff2'),url('../fonts/proxima_nova_regular-webfont.woff') format('woff');
   
 }
