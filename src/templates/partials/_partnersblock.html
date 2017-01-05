@@ -1,0 +1,19 @@
+{% import "data/data.html" as data %}
+
+<div>
+    <h1 class="partners_block__title">Партнеры проекта</h1>
+</div>
+
+<div class="partners">
+    {% for partner in data.partners%}
+
+    <div class="partner">
+
+        <div class="partner__icon icon--{{partner.title}}"></div>
+
+        <p class="partner__text"><a href="#!" class="partner__text_link">{{partner.text}}</a></p>
+
+    </div>
+
+    {%endfor%}
+</div>

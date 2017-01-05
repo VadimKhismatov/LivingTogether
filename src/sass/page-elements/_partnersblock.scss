@@ -1,0 +1,43 @@
+.partners_block__title{
+    font-family: "Proxima Nova Semibold", sans-serif;
+    font-size: 19px;
+    color: #2b2b2b;
+    margin: 35px 0 0 23px;
+    letter-spacing: -0.7px;
+}
+
+.partner__text{
+    font-family: "Geneva", sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+}
+.partner__text_link{
+    color: #2b2b2b;
+}
+
+.partners{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partner{
+    width: 100px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.partner__text{
+    padding-right: 17px;
+}
+
+.partner__icon{
+    margin-bottom: 10px;
+}
+/*icons*/
+
+@each $ic in audio-system,appliances,trucking,doors,designers,for-kids,health,climat,clean-service,beauty,kitchens,stairs,materials,furniture,stretch-ceiling,celebration,security-system,drinking-water,floor,hobbies,other, sanitary-engineering, light, textile-products, tourism, smart-house, building, animals-care,artistic-forging{
+    .icon--#{$ic}{
+    @include s(#{$ic});
+
+    }
+}
