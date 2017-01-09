@@ -20,10 +20,15 @@
 
 <!--SLIDER BLOCK begin-->
 <section class="slider_block block">
-	<section class="container block">
+	<section class="container container--slider block">
 		<a href="#!" class="slider_block__link slider_block__link--left"></a>
+		
+		<div class="slider block">
 
-		{% include "partials/_sliderblock.html" %}
+			{% include "partials/_sliderblock.html" %}
+
+
+		</div>
 
 		<a href="#!" class="slider_block__link slider_block__link--right"></a>
 	</section>
@@ -57,5 +62,15 @@
 	</section>
 </section>
 <!--PARTNERS BLOCK end-->
+
+<!--FOOTER begin-->
+<section class="footer block">
+	<section class="container container--footer">
+
+		{% include "partials/_footer.html" %}
+
+	</section>
+</section>
+<!--FOOTER end-->
 
 {% endblock %}

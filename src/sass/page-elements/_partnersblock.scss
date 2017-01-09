@@ -18,6 +18,7 @@
 .partners{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 22px;
 }
 
 .partner{
@@ -30,9 +31,7 @@
     padding-right: 17px;
 }
 
-.partner__icon{
-    margin-bottom: 10px;
-}
+
 /*icons*/
 
 @each $ic in audio-system,appliances,trucking,doors,designers,for-kids,health,climat,clean-service,beauty,kitchens,stairs,materials,furniture,stretch-ceiling,celebration,security-system,drinking-water,floor,hobbies,other, sanitary-engineering, light, textile-products, tourism, smart-house, building, animals-care,artistic-forging{
@@ -40,4 +39,9 @@
     @include s(#{$ic});
 
     }
+}
+.partner__icon{
+    display: block;
+    margin-bottom: 10px;
+    height: 76px;
 }

@@ -1,7 +1,19 @@
-.column{
+.container--slider{
+    width: 1040px;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.slider{
+    width:100%;
+    justify-content: space-between;
+}
+/*.slick-slide{
+    width: 287px;
+}*/
+.slide{
     flex-direction: column;
     align-items: center;
-    width:339px;
+    width:287px;
     padding: 41px 0 0 0px;
     position: relative;
 }
@@ -13,6 +25,7 @@
     height:37px;
     background-image: url("../icons/slider-arrows.png");
     background-repeat: no-repeat;
+    z-index: 5;
 }
 
 .slider_block__link--left{
@@ -49,7 +62,7 @@
 
 .column__img{
     
-    margin: 9px 0 0 0px;
+    margin: 9px auto 0 auto;
     z-index: -1;
 }
 
@@ -62,7 +75,7 @@
     background-image: url("../img/vatutino-extra.png");
     position: absolute;
     top: 221px;
-    left: 17px;
+    left: 0px;
 }
 
 /*form*/
@@ -79,7 +92,7 @@
 .authorisation{
     width:287px;
     height: 152px;
-    margin: 22px 45px 0 0;
+    margin: 22px 0 0 8px;
     padding: 20px 23px 20px 23px;
     display: flex;
     flex-direction: column;
@@ -157,14 +170,14 @@
     background-image: url("../icons/location-pin.png");
     width: 20px;
     height: 24px;
-    margin: 2px 6px 0 25px;
+    margin: 0px 6px 0 0px;
     background-position: 1px 0px;
     background-repeat: no-repeat;
 }
 
 .location_wrapper{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .additional_info__location_link{
@@ -181,7 +194,7 @@
     padding: 1px 0 0 0;
     font-family: "Proxima Nova";
     font-size: 13px;
-    text-align: left;
+    text-align: center;
     color: #2b2b2b;
 }
 
