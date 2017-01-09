@@ -1,11 +1,10 @@
 {% import "data/data.html" as data %} {% for slide in data.slides %}
 <!--COLUMN begin-->
 <div class="slide block">
-
     <div class="head">
 
-        <h4 class="head__type">{{slide.type}}</h3>
-            <h1 class="head__title">{{slide.title}}</h1>
+        <h3 class="head__type">{{slide.type}}</h3>
+        <h1 class="head__title">{{slide.title}}</h1>
 
     </div>
     <div class="column__img_wrapper">
@@ -13,7 +12,8 @@
         <img src="../img/{{slide.img}}.png" class="column__img" />
 
     </div>
-    {% if slide.additionalView %}<div class="additional_views"></div>{%endif%}
+    {% if slide.additionalView %}
+    <div class="additional_views"></div>{%endif%}
 
     <form class="authorisation">
         <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта">

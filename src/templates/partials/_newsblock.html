@@ -1,3 +1,5 @@
+{% import "data/data.html" as data%}
+
 <div class="news">
     <!--NEWS_PANEL begin-->
     <div class="news_panel">
@@ -7,42 +9,20 @@
     <!--NEWS_PANEL end-->
     <div class="news__items_wrapper">
 
+        {% for news in data.news%}
         <!--NEWS ITEM begin-->
         <div class="news__item">
             <p class="news__item_data">
-                <a href="#!" class="news__item_data_link">12 мая 2013</a>
+                <a href="#!" class="news__item_data_link">{{news.date}}</a>
             </p>
 
             <p class="news__item_text">
-                Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет.
+                {{news.text}}
             </p>
             <a href="#!" class="news__item_full_link">подробнее</a>
         </div>
         <!--NEWS ITEM end-->
-        <!--NEWS ITEM begin-->
-        <div class="news__item">
-            <p class="news__item_data">
-                <a href="#!" class="news__item_data_link">12 мая 2013</a>
-            </p>
-
-            <p class="news__item_text">
-                Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет.
-            </p>
-            <a href="#!" class="news__item_full_link">подробнее</a>
-        </div>
-        <!--NEWS ITEM end-->
-        <!--NEWS ITEM begin-->
-        <div class="news__item">
-            <p class="news__item_data">
-                <a href="#!" class="news__item_data_link">12 мая 2013</a>
-            </p>
-
-            <p class="news__item_text">
-                Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет.
-            </p>
-            <a href="#!" class="news__item_full_link">подробнее</a>
-        </div>
-        <!--NEWS ITEM end-->
+        {%endfor%}
 
     </div>
 
