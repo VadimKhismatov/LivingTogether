@@ -1139,14 +1139,14 @@ header {
   background-image: url("../img/sprite.png");
   width: 81px;
   height: 57px;
-  background-position: -177px -274px;
+  background-position: -86px -274px;
 }
 
 .partner__icon--security-system {
   background-image: url("../img/sprite.png");
   width: 81px;
   height: 57px;
-  background-position: -86px -274px;
+  background-position: -177px -274px;
 }
 
 .partner__icon--drinking-water {
