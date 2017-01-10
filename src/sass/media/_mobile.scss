@@ -1,0 +1,131 @@
+@media only screen and (max-width:425px){
+    /*header block begin*/
+    header{
+        background-position: center -336px;
+    }
+    .container--head{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .top_menu{
+        padding: 10px 0 0 0;
+    }
+
+    /*menu begin*/
+    .menu{
+        flex-direction: column;
+        &--top{
+            margin:0;
+        }
+    }
+
+
+    .menu_item{
+        margin: 0;
+        justify-content: center;
+    }
+
+    .menu__img{
+        display:none;
+    }
+
+    .menu__link{
+        margin:0;
+        padding: 5px 0 5px 0;
+        font-size: 14px;
+    }
+
+    /*menu end*/
+    /*header block end*/
+
+    /*slider block begin*/
+    .container--slider{
+        width: 100%;
+        padding-right: 0;
+        overflow: hidden;
+    }
+    /*slider arrows begin*/
+    
+    .slider__link{
+        display: none;
+    }
+
+    /*slider arrows end*/
+
+
+    /*slide begin*/
+    
+    .slide{
+        width: 100%;
+    }
+    
+    /*slide end*/
+
+    /*slider block end*/
+
+    /*information block begin*/
+
+    .container--information{
+        flex-direction: column;
+    }
+
+    /*main info block begin*/
+    
+    .main_info{
+        width: 100%;
+        padding: 45px 10px 0 10px;
+    }
+    
+    .main_info__paragraf{
+        text-indent: 15px;
+    }
+    .main_info__paragraf--last{
+        margin-top: 10px;
+    }
+
+    /*main info block end*/
+
+    /*tech info begin*/
+    
+    .tech_info{
+        width: 100%;
+    }
+    .club__img_wrapper{
+        text-align: center;
+    }
+    /*tech info end*/
+
+    /*information block end*/
+
+
+    /*news block begin*/
+    
+    .news_panel__all_news_link{
+        margin-top: 5px;
+    }
+
+    .news__item{
+        margin-bottom: 10px;
+    }
+    
+    /*news block end*/
+
+
+    /*partners block begin*/
+    
+    .partners_block__title{
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .partners{
+        padding: 0 10px 0 10px;
+    }
+
+    /*partners block end*/
+}

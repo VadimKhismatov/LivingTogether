@@ -1,3 +1,10 @@
+/*header*/
+.container--head{
+    @media only screen and (min-width:1024px){
+    width: 1150px;
+    }
+}
+
 /*top menu*/
 .top_menu{
     padding: 10px 0 0 32px;
@@ -178,3 +185,5 @@
     padding-top: 1px;
     letter-spacing: 0.3px;
 }
+
+

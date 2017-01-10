@@ -2753,7 +2753,7 @@ sayHello();
 
 //slider
 
-$(document).ready(function () {
+/*$(document).ready(function () {
     $(".slider").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -2761,4 +2761,4 @@ $(document).ready(function () {
         nextArrow: $(".slider__link--right"),
         prevArrow: $(".slider__link--left")
     });
-});
+});*/
