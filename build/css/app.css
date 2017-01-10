@@ -451,73 +451,91 @@ header {
   margin: 0 0 0 18px;
 }
 
+/*@each  in rent, polls, communication,invest,contacts,news,partners, question, typical-decoration, club-cart{
+    .menu__img--{
+    @include s();
+
+    }
+}*/
+.menu__img--rent {
+  background-image: url("../img/sprite.png");
+  width: 13px;
+  height: 13px;
+  background-position: -494px -302px;
+}
+
+.menu__img--polls {
+  background-image: url("../img/sprite.png");
+  width: 11px;
+  height: 13px;
+  background-position: -516px -301px;
+}
+
+.menu__img--communication {
+  background-image: url("../img/sprite.png");
+  width: 18px;
+  height: 18px;
+  background-position: -498px -231px;
+}
+
+.menu__img--invest {
+  background-image: url("../img/sprite.png");
+  width: 16px;
+  height: 14px;
+  background-position: -495px -257px;
+}
+
+.menu__img--contacts {
+  background-image: url("../img/sprite.png");
+  width: 17px;
+  height: 12px;
+  background-position: -523px -257px;
+}
+
+.menu__img--news {
+  background-image: url("../img/sprite.png");
+  width: 18px;
+  height: 20px;
+  background-position: -528px -198px;
+}
+
+.menu__img--partners {
+  background-image: url("../img/sprite.png");
+  width: 19px;
+  height: 19px;
+  background-position: -527px -167px;
+}
+
+.menu__img--question {
+  background-image: url("../img/sprite.png");
+  width: 21px;
+  height: 21px;
+  background-position: -497px -167px;
+}
+
+.menu__img--typical-decoration {
+  background-image: url("../img/sprite.png");
+  width: 18px;
+  height: 18px;
+  background-position: -526px -231px;
+}
+
+.menu__img--club-cart {
+  background-image: url("../img/sprite.png");
+  width: 16px;
+  height: 11px;
+  background-position: -496px -280px;
+}
+
 .menu__img {
   display: block;
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  background-position: center;
-}
-
-.menu__img--rent {
-  background-image: url("../icons/rent.png");
-  margin: 0 3px 0px 0px;
-  background-position: 4px 2px;
-}
-
-.menu__img--polls {
-  background-image: url("../icons/polls.png");
-  margin: 0 8px 0 0px;
-  background-position: 5px 3px;
-}
-
-.menu__img--communication {
-  background-image: url("../icons/communication.png");
-  margin: 0 3px 0 0;
-  background-position: 1px -1px;
-}
-
-.menu__img--invest {
-  background-image: url("../icons/invest.png");
-  margin: 0 6px 0 0px;
-  background-position: 3px 2px;
-}
-
-.menu__img--contacts {
-  background-image: url("../icons/contacts.png");
-  margin: 0 7px 0 0;
-  background-position: 2px 2px;
-}
-
-.menu__img--news {
-  background-image: url("../icons/news.png");
-  margin: 0 1px 0 0;
-  background-position: -7px center;
-}
-
-.menu__img--partners_livingtigether {
-  background-image: url("../icons/partners_of_liivingtogether.png");
-  margin: 0 11px 0 0;
-  background-position: 1px -2px;
-}
-
-.menu__img--question {
-  background-image: url("../icons/question.png");
-  margin: 0 7px 0 0px;
-}
-
-.menu__img--typical_decoration {
-  background-image: url("../icons/typical-decoration.png");
-  margin: 0 2px 0 0;
-}
-
-.menu__img--club_cart {
-  background-image: url("../icons/club-cart.png");
-  margin: 0 7px 0 0;
-  background-position: 2px 3px;
 }
 
 .menu__link {
+  display: block;
   font-family: "Geneva", sans-serif;
   font-weight: 300;
   font-size: 12px;
@@ -526,33 +544,52 @@ header {
 }
 
 .menu__link--rent {
+  margin: 0 0 0 3px;
   letter-spacing: 0.3px;
 }
 
+.menu__link--polls {
+  margin: 0 0 0 8px;
+}
+
 .menu__link--communication {
+  margin: 0 0 0 3px;
   letter-spacing: 0.1px;
 }
 
 .menu__link--invest {
+  margin: 0 0 0 6px;
   letter-spacing: 0.2px;
 }
 
 .menu__link--contacts {
+  margin: 0 0 0 6px;
   letter-spacing: 0.6px;
 }
 
+.menu__link--news {
+  margin: 0 1px 0 0;
+}
+
+.menu__link--partners {
+  margin: 0 0 0 11px;
+}
+
 .menu__link--question {
-  font-size: 11px;
+  margin: 0 0 0 7px;
   padding-top: 2px;
+  font-size: 11px;
   letter-spacing: 0.2px;
 }
 
-.menu__link--typical_decoration {
+.menu__link--typical-decoration {
+  margin: 0 0 0 2px;
   padding-top: 1px;
   letter-spacing: 0.5px;
 }
 
-.menu__link--club_cart {
+.menu__link--club-cart {
+  margin: 0 0 0 7px;
   padding-top: 1px;
   letter-spacing: 0.3px;
 }
@@ -591,18 +628,19 @@ header {
   display: block;
   width: 37px;
   height: 37px;
-  background-image: url("../icons/slider-arrows.png");
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   z-index: 5;
 }
 
 .slider__link--left {
+  background-position: -267px -350px;
   top: 366px;
   left: 363px;
 }
 
 .slider__link--right {
-  background-position: -40px 0px;
+  background-position: -307px -350px;
   top: 366px;
   right: 390px;
 }
@@ -701,7 +739,7 @@ header {
 
 .authorisation__input--email {
   margin-bottom: 8px;
-  background-image: url("../icons/login-person.png");
+  background-image: url("../img/login-person.png");
   background-repeat: no-repeat;
   background-position: 7px 8px;
   padding-left: 30px;
@@ -709,7 +747,7 @@ header {
 }
 
 .authorisation__input--login {
-  background-image: url("../icons/login-key.png");
+  background-image: url("../img/login-key.png");
   background-repeat: no-repeat;
   background-position: 9px 8px;
   padding-left: 32px;
@@ -748,12 +786,12 @@ header {
 }
 
 .additional_info__location_icon {
-  background-image: url("../icons/location-pin.png");
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -496px -197px;
   width: 20px;
   height: 24px;
   margin: 0px 6px 0 0px;
-  background-position: 1px 0px;
-  background-repeat: no-repeat;
 }
 
 .location_wrapper {
@@ -1139,21 +1177,21 @@ header {
   background-image: url("../img/sprite.png");
   width: 81px;
   height: 57px;
-  background-position: -86px -274px;
+  background-position: -177px -274px;
 }
 
 .partner__icon--security-system {
   background-image: url("../img/sprite.png");
   width: 81px;
   height: 57px;
-  background-position: -177px -274px;
+  background-position: -86px -274px;
 }
 
 .partner__icon--drinking-water {
   background-image: url("../img/sprite.png");
   width: 61px;
   height: 73px;
-  background-position: -498px -83px;
+  background-position: -498px 0px;
 }
 
 .partner__icon--floor {
@@ -1188,7 +1226,7 @@ header {
   background-image: url("../img/sprite.png");
   width: 61px;
   height: 73px;
-  background-position: -498px 0px;
+  background-position: -498px -83px;
 }
 
 .partner__icon--textile-products {

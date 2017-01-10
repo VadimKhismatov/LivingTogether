@@ -24,17 +24,18 @@
     display: block;
     width:37px;
     height:37px;
-    background-image: url("../icons/slider-arrows.png");
+    background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     z-index: 5;
 }
 
 .slider__link--left{
+    background-position: -267px -350px;
     top: 366px;
     left: 363px;
 }
 .slider__link--right{
-    background-position: -40px 0px;
+    background-position: -307px -350px;
     top: 366px;
     right: 390px;
 }
@@ -120,15 +121,15 @@
 
 .authorisation__input--email{
     margin-bottom: 8px;
-    background-image: url("../icons/login-person.png");
+    background-image: url("../img/login-person.png");
     background-repeat: no-repeat;
     background-position: 7px 8px;
     padding-left: 30px;
     letter-spacing: 0.6px;
-
 }
+
 .authorisation__input--login{
-    background-image: url("../icons/login-key.png");
+    background-image: url("../img/login-key.png");
     background-repeat: no-repeat;
     background-position: 9px 8px;
     padding-left: 32px;
@@ -167,12 +168,12 @@
 }
 
 .additional_info__location_icon{
-    background-image: url("../icons/location-pin.png");
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -496px -197px;
     width: 20px;
     height: 24px;
     margin: 0px 6px 0 0px;
-    background-position: 1px 0px;
-    background-repeat: no-repeat;
 }
 
 .location_wrapper{
