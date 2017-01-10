@@ -7,21 +7,24 @@
         <h1 class="head__title">{{slide.title}}</h1>
 
     </div>
-    <div class="column__img_wrapper">
+    <div class="slide__img_wrapper">
 
-        <img src="../img/{{slide.img}}.png" class="column__img" />
+        <img src="../img/{{slide.img}}.png" class="slide__img" />
 
     </div>
-    {% if slide.additionalView %}
-    <div class="additional_views"></div>{%endif%}
+    {% if slide.additionalImg %}
+    <div class="additional_img_wrapper">
+        <img src="../img/{{slide.additionalImg}}.png" class="slide__additional_img"/>
+    </div>
+    {%endif%}
 
     <form class="authorisation">
         <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта">
         <input type="text" class="authorisation__input authorisation__input--login" placeholder="Логин">
         <div class="authorisation__controls_block">
             <div class="authorisation__links_wrapper">
-                <a href="#!" class="authorisation__links authorisation__fogget_password">Забыли пароль?</a>
-                <a href="#!" class="authorisation__links authorisation__registration">Регистрация</a>
+                <a href="#!" class="authorisation__link">Забыли пароль?</a>
+                <a href="#!" class="authorisation__link">Регистрация</a>
             </div>
             <div>
                 <input type="submit" class="authorisation__submit" value="Войти">

@@ -1,9 +1,11 @@
+/*clider block*/
 .container--slider{
     width: 1150px;
     justify-content: space-between;
     padding-right: 10px;
     
 }
+/*slider*/
 .slider{
     width:100%;
     justify-content: space-between;
@@ -17,7 +19,7 @@
     position: relative;
 }
 
-.slider_block__link{
+.slider__link{
     position:absolute;
     display: block;
     width:37px;
@@ -27,11 +29,11 @@
     z-index: 5;
 }
 
-.slider_block__link--left{
+.slider__link--left{
     top: 366px;
     left: 363px;
 }
-.slider_block__link--right{
+.slider__link--right{
     background-position: -40px 0px;
     top: 366px;
     right: 390px;
@@ -39,43 +41,44 @@
 
 .head{
     width: 100%;
-    color: #2b2b2b;
+    color: $mainTextColor;
     padding-left: 40px;
 }
 
 .head__type{
-    font-family: "Proxima Nova Semibold", sans-serif;
+    font-family: $proximaSemibold;
     font-size: 24px;
     padding: 0 0 0 3px;
 }
 
 .head__title{
     width: 246px;
-    font-family: "Proxima Nova Bold", sans-serif;
-    font-weight: bold;
+    @include proximaBold;
     font-size: 40px;
-    color: #f8b22b;
+    color: $slideTitleColor;
     line-height: 31px;
     letter-spacing: -0.9px;
 }
 
-.column__img{
-    
+.slide__img{
     margin: 9px auto 0 auto;
     z-index: -1;
 }
 
-.additional_views{
+.additional_img_wrapper{
     width:127px;
     height: 127px;
-    box-sizing: border-box;
-    border: 5px solid #fff;
-    border-radius: 50%;
-    background-image: url("../img/vatutino-extra.png");
     position: absolute;
     top: 221px;
     left: 30px;
 }
+.slide__additional_img{
+        width:100%;
+        height: 100%;
+        box-sizing: border-box;
+        border: 5px solid #fff;
+        border-radius: 50%;
+    }
 
 /*form*/
 
@@ -111,8 +114,7 @@
     box-sizing: border-box;
     border: 1px solid #d4d4d4;
     border-radius: 7px;
-    font-family: "Geneva", sans-serif;
-    font-weight: 300;
+    @include geneva;
     font-size: 13px;
 }
 
@@ -137,7 +139,7 @@
     width:107px;
     height: 32px;
     margin-right: 2px;
-    font-family: "Proxima Nova Semibold", sans-serif;
+    font-family: $proximaSemibold;
     font-weight: bold;
     font-size: 15px;
     color: #1b1a1a;
@@ -149,12 +151,11 @@
     margin-left: 4px;
 }
 
-.authorisation__links{
+.authorisation__link{
     display: block;
-    font-family: "Geneva", sans-serif;
-    font-weight: 300;
+    @include geneva;
     font-size: 10px;
-    color: #2b2b2b;
+    color: $mainTextColor;
     opacity: .4;
 }
 
@@ -181,7 +182,7 @@
 
 .additional_info__location_link{
     display: block;
-    font-family: "Geneva", sans-serif;
+    @include geneva;
     font-size: 11px;
     color: #2b2b2b;
     line-height: 24px;
@@ -191,14 +192,13 @@
 
 .additional_info__tel{
     padding: 1px 0 0 0;
-    font-family: "Proxima Nova";
+    font-family: $proxima;
     font-size: 13px;
     text-align: center;
     color: #2b2b2b;
 }
 
 .additional_info__tel--bold{
-    font-family: "Proxima Nova Bold";
-    font-weight: bold;
+    @include proximaBold;
     font-size: 20px;
 }

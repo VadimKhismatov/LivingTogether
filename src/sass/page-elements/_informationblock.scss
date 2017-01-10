@@ -1,16 +1,16 @@
-.main-info{
+/*information block*/
+.main_info{
     width: 708px;
-    color: #2b2b2b;
+    color: $mainTextColor;
     padding: 45px 0 0 21px;
 }
 
-.main-info__text{
-    font-family: "Geneva", sans-serif;
-    font-weight: 300;
+.main_info__text{
+    @include geneva;
     font-size:13px;
     
 }
-.main-info__paragraf{
+.main_info__paragraf{
     line-height: 20px;
 }
 .info_list{
@@ -31,9 +31,12 @@
     }
 }
 
-.main-info__link{
+.main_info__link{
     color: #2f96cb;
 }
+
+/*technical block*/
+
 .tech_info{
     width: 298px;
     padding-top: 46px;
@@ -53,15 +56,15 @@
     width: 130px;
 }
 
-.support_telephone{
-    font-family: "Proxima Nova";
+.support__telephone{
+    font-family: $proxima;
     font-size: 12px;
     color: #919191;
     padding-left: 3px;
     letter-spacing: 0.2px;
 }
-.support_telephone-bold{
-    font-family: "Proxima Nova Semibold";
+.support__telephone-bold{
+    font-family: $proximaSemibold;
     font-size: 19px;
     color: #353535;
     line-height: 16px;
@@ -79,7 +82,7 @@
 
 .club{
     padding: 21px 0 0 0px;
-    color:#2b2b2b;
+    color:$mainTextColor;
 }
 
 .club__info{
@@ -87,15 +90,13 @@
 }
 
 .club__title{
-    font-family: "Proxima Nova Bold", sans-serif;
-    font-weight: bold;
+    @include proximaBold;
     font-size: 23px;
     letter-spacing: -0.3px;
 }
 
 .club__text{
-    font-family: "Geneva",sans-serif;
-    font-weight: 300;
+    @include geneva;
     font-size: 13px;
     padding: 6px 0 0 0;
     line-height: 20px;
@@ -105,10 +106,9 @@
 .club__link{
     display: block;
     margin: 16px 0 0 1px;
-    font-family: "Geneva", sans-serif;
-    font-weight: 300;
+    @include geneva;
     font-size: 12px;
-    color: #2b2b2b;
+    color: $mainTextColor;
     opacity: .4;
     letter-spacing: 0.4px;
 }

@@ -1,0 +1,14 @@
+$proxima: "Proxima Nova", sans-serif;
+$proximaSemibold: "Proxima Nova  Semibold", sans-serif;
+$slideTitleColor: #f8b22b;
+$mainTextColor: #2b2b2b;
+
+@mixin geneva{
+    font-family: "Geneva", sans-serif;
+    font-weight: 300;
+}
+
+@mixin proximaBold{
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-weight: bold;
+}

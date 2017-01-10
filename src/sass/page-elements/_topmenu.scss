@@ -38,6 +38,7 @@
 .menu_item--club_cart{
     margin: 0 0 0 18px;
 }
+
 .menu__img{
     display: block;
     width: 20px;
@@ -106,10 +107,9 @@
 
 
 .menu__link{
-    font-family: "Geneva", sans-serif;
-    font-weight: 300;
+    @include geneva;
     font-size: 12px;
-    color: #2b2b2b;
+    color: $mainTextColor;
     letter-spacing: 0.1px;
 }
 .menu__link--rent{

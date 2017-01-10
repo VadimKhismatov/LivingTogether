@@ -1,3 +1,4 @@
+/*footer*/
 .footer{
     position:relative;
     margin: 39px 0 0 0;
@@ -16,7 +17,7 @@
     left: 388px;
     width: 261px;
     background-color: #fff;
-    font-family: "Proxima Nova Semibold",sans-serif;
+    font-family: $proximaSemibold;
     font-size: 12px;
     color: #484c4f;
     letter-spacing: 0.5px;
@@ -25,8 +26,7 @@
 
 .footer__text{
     margin: 16px 0 0 1px;
-    font-family: "Geneva",sans-serif;
-    font-weight: 300;
+    @include geneva;
     font-size: 10px;
     color: #7d7d7d;
 }

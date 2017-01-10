@@ -557,6 +557,7 @@ header {
   letter-spacing: 0.3px;
 }
 
+/*clider block*/
 .container--slider {
   width: 1150px;
   -webkit-justify-content: space-between;
@@ -565,6 +566,7 @@ header {
   padding-right: 10px;
 }
 
+/*slider*/
 .slider {
   width: 100%;
   -webkit-justify-content: space-between;
@@ -584,7 +586,7 @@ header {
   position: relative;
 }
 
-.slider_block__link {
+.slider__link {
   position: absolute;
   display: block;
   width: 37px;
@@ -594,12 +596,12 @@ header {
   z-index: 5;
 }
 
-.slider_block__link--left {
+.slider__link--left {
   top: 366px;
   left: 363px;
 }
 
-.slider_block__link--right {
+.slider__link--right {
   background-position: -40px 0px;
   top: 366px;
   right: 390px;
@@ -612,7 +614,7 @@ header {
 }
 
 .head__type {
-  font-family: "Proxima Nova Semibold", sans-serif;
+  font-family: "Proxima Nova  Semibold", sans-serif;
   font-size: 24px;
   padding: 0 0 0 3px;
 }
@@ -627,21 +629,25 @@ header {
   letter-spacing: -0.9px;
 }
 
-.column__img {
+.slide__img {
   margin: 9px auto 0 auto;
   z-index: -1;
 }
 
-.additional_views {
+.additional_img_wrapper {
   width: 127px;
   height: 127px;
-  box-sizing: border-box;
-  border: 5px solid #fff;
-  border-radius: 50%;
-  background-image: url("../img/vatutino-extra.png");
   position: absolute;
   top: 221px;
   left: 30px;
+}
+
+.slide__additional_img {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 5px solid #fff;
+  border-radius: 50%;
 }
 
 /*form*/
@@ -714,7 +720,7 @@ header {
   width: 107px;
   height: 32px;
   margin-right: 2px;
-  font-family: "Proxima Nova Semibold", sans-serif;
+  font-family: "Proxima Nova  Semibold", sans-serif;
   font-weight: bold;
   font-size: 15px;
   color: #1b1a1a;
@@ -726,7 +732,7 @@ header {
   margin-left: 4px;
 }
 
-.authorisation__links {
+.authorisation__link {
   display: block;
   font-family: "Geneva", sans-serif;
   font-weight: 300;
@@ -762,6 +768,7 @@ header {
 .additional_info__location_link {
   display: block;
   font-family: "Geneva", sans-serif;
+  font-weight: 300;
   font-size: 11px;
   color: #2b2b2b;
   line-height: 24px;
@@ -771,31 +778,32 @@ header {
 
 .additional_info__tel {
   padding: 1px 0 0 0;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", sans-serif;
   font-size: 13px;
   text-align: center;
   color: #2b2b2b;
 }
 
 .additional_info__tel--bold {
-  font-family: "Proxima Nova Bold";
+  font-family: "Proxima Nova Bold", sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
 
-.main-info {
+/*information block*/
+.main_info {
   width: 708px;
   color: #2b2b2b;
   padding: 45px 0 0 21px;
 }
 
-.main-info__text {
+.main_info__text {
   font-family: "Geneva", sans-serif;
   font-weight: 300;
   font-size: 13px;
 }
 
-.main-info__paragraf {
+.main_info__paragraf {
   line-height: 20px;
 }
 
@@ -817,10 +825,11 @@ header {
   left: 8px;
 }
 
-.main-info__link {
+.main_info__link {
   color: #2f96cb;
 }
 
+/*technical block*/
 .tech_info {
   width: 298px;
   padding-top: 46px;
@@ -843,16 +852,16 @@ header {
   width: 130px;
 }
 
-.support_telephone {
-  font-family: "Proxima Nova";
+.support__telephone {
+  font-family: "Proxima Nova", sans-serif;
   font-size: 12px;
   color: #919191;
   padding-left: 3px;
   letter-spacing: 0.2px;
 }
 
-.support_telephone-bold {
-  font-family: "Proxima Nova Semibold";
+.support__telephone-bold {
+  font-family: "Proxima Nova  Semibold", sans-serif;
   font-size: 19px;
   color: #353535;
   line-height: 16px;
@@ -886,7 +895,7 @@ header {
 }
 
 .club__text {
-  font-family: "Geneva",sans-serif;
+  font-family: "Geneva", sans-serif;
   font-weight: 300;
   font-size: 13px;
   padding: 6px 0 0 0;
@@ -905,6 +914,7 @@ header {
   letter-spacing: 0.4px;
 }
 
+/*news block*/
 .news {
   width: 100%;
   margin: 46px 0 0 0px;
@@ -925,12 +935,13 @@ header {
 }
 
 .news_panel__title {
-  font-family: "Proxima Nova Semibold",sans-serif;
+  font-family: "Proxima Nova  Semibold", sans-serif;
   font-size: 19px;
 }
 
 .news_panel__all_news_link {
   font-family: "Geneva", sans-serif;
+  font-weight: 300;
   font-size: 12px;
   color: #2b2b2b;
 }
@@ -964,6 +975,10 @@ header {
   font-size: 13px;
 }
 
+.news__item_text {
+  font-size: 13px;
+}
+
 .news__item_full_link {
   display: block;
   margin: 7px 0 0 0;
@@ -975,8 +990,9 @@ header {
   letter-spacing: 0.4px;
 }
 
+/*partners block*/
 .partners_block__title {
-  font-family: "Proxima Nova Semibold", sans-serif;
+  font-family: "Proxima Nova  Semibold", sans-serif;
   font-size: 19px;
   color: #2b2b2b;
   margin: 35px 0 0 23px;
@@ -1014,203 +1030,203 @@ header {
 }
 
 /*icons*/
-.icon--audio-system {
+.partner__icon--audio-system {
   background-image: url("../img/sprite.png");
   width: 89px;
   height: 69px;
   background-position: -104px -92px;
 }
 
-.icon--appliances {
+.partner__icon--appliances {
   background-image: url("../img/sprite.png");
   width: 59px;
   height: 81px;
   background-position: -420px -81px;
 }
 
-.icon--trucking {
+.partner__icon--trucking {
   background-image: url("../img/sprite.png");
   width: 101px;
   height: 73px;
   background-position: -113px 0px;
 }
 
-.icon--doors {
+.partner__icon--doors {
   background-image: url("../img/sprite.png");
   width: 66px;
   height: 87px;
   background-position: 0px -177px;
 }
 
-.icon--designers {
+.partner__icon--designers {
   background-image: url("../img/sprite.png");
   width: 103px;
   height: 82px;
   background-position: 0px 0px;
 }
 
-.icon--for-kids {
+.partner__icon--for-kids {
   background-image: url("../img/sprite.png");
   width: 67px;
   height: 73px;
   background-position: -335px -159px;
 }
 
-.icon--health {
+.partner__icon--health {
   background-image: url("../img/sprite.png");
   width: 75px;
   height: 67px;
   background-position: -335px -82px;
 }
 
-.icon--climat {
+.partner__icon--climat {
   background-image: url("../img/sprite.png");
   width: 101px;
   height: 59px;
   background-position: -224px 0px;
 }
 
-.icon--clean-service {
+.partner__icon--clean-service {
   background-image: url("../img/sprite.png");
   width: 76px;
   height: 66px;
   background-position: 0px -274px;
 }
 
-.icon--beauty {
+.partner__icon--beauty {
   background-image: url("../img/sprite.png");
   width: 90px;
   height: 61px;
   background-position: -76px -177px;
 }
 
-.icon--kitchens {
+.partner__icon--kitchens {
   background-image: url("../img/sprite.png");
   width: 86px;
   height: 67px;
   background-position: -224px -69px;
 }
 
-.icon--stairs {
+.partner__icon--stairs {
   background-image: url("../img/sprite.png");
   width: 76px;
   height: 61px;
   background-position: -176px -177px;
 }
 
-.icon--materials {
+.partner__icon--materials {
   background-image: url("../img/sprite.png");
   width: 71px;
   height: 64px;
   background-position: 0px -420px;
 }
 
-.icon--furniture {
+.partner__icon--furniture {
   background-image: url("../img/sprite.png");
   width: 73px;
   height: 61px;
   background-position: -81px -420px;
 }
 
-.icon--stretch-ceiling {
+.partner__icon--stretch-ceiling {
   background-image: url("../img/sprite.png");
   width: 87px;
   height: 44px;
   background-position: -87px -350px;
 }
 
-.icon--celebration {
+.partner__icon--celebration {
   background-image: url("../img/sprite.png");
   width: 81px;
   height: 57px;
   background-position: -177px -274px;
 }
 
-.icon--security-system {
+.partner__icon--security-system {
   background-image: url("../img/sprite.png");
   width: 81px;
   height: 57px;
   background-position: -86px -274px;
 }
 
-.icon--drinking-water {
+.partner__icon--drinking-water {
   background-image: url("../img/sprite.png");
   width: 61px;
   height: 73px;
   background-position: -498px -83px;
 }
 
-.icon--floor {
+.partner__icon--floor {
   background-image: url("../img/sprite.png");
   width: 73px;
   height: 42px;
   background-position: -184px -350px;
 }
 
-.icon--hobbies {
+.partner__icon--hobbies {
   background-image: url("../img/sprite.png");
   width: 65px;
   height: 70px;
   background-position: -420px -172px;
 }
 
-.icon--other {
+.partner__icon--other {
   background-image: url("../img/sprite.png");
   width: 75px;
   height: 72px;
   background-position: -335px 0px;
 }
 
-.icon--sanitary-engineering {
+.partner__icon--sanitary-engineering {
   background-image: url("../img/sprite.png");
   width: 74px;
   height: 57px;
   background-position: -268px -274px;
 }
 
-.icon--light {
+.partner__icon--light {
   background-image: url("../img/sprite.png");
   width: 61px;
   height: 73px;
   background-position: -498px 0px;
 }
 
-.icon--textile-products {
+.partner__icon--textile-products {
   background-image: url("../img/sprite.png");
   width: 66px;
   height: 63px;
   background-position: 0px -494px;
 }
 
-.icon--tourism {
+.partner__icon--tourism {
   background-image: url("../img/sprite.png");
   width: 94px;
   height: 75px;
   background-position: 0px -92px;
 }
 
-.icon--smart-house {
+.partner__icon--smart-house {
   background-image: url("../img/sprite.png");
   width: 58px;
   height: 77px;
   background-position: -420px -252px;
 }
 
-.icon--building {
+.partner__icon--building {
   background-image: url("../img/sprite.png");
   width: 68px;
   height: 71px;
   background-position: -420px 0px;
 }
 
-.icon--animals-care {
+.partner__icon--animals-care {
   background-image: url("../img/sprite.png");
   width: 67px;
   height: 62px;
   background-position: -76px -494px;
 }
 
-.icon--artistic-forging {
+.partner__icon--artistic-forging {
   background-image: url("../img/sprite.png");
   width: 77px;
   height: 60px;
@@ -1223,6 +1239,7 @@ header {
   height: 76px;
 }
 
+/*footer*/
 .footer {
   position: relative;
   margin: 39px 0 0 0;
@@ -1246,7 +1263,7 @@ header {
   left: 388px;
   width: 261px;
   background-color: #fff;
-  font-family: "Proxima Nova Semibold",sans-serif;
+  font-family: "Proxima Nova  Semibold", sans-serif;
   font-size: 12px;
   color: #484c4f;
   letter-spacing: 0.5px;
@@ -1255,7 +1272,7 @@ header {
 
 .footer__text {
   margin: 16px 0 0 1px;
-  font-family: "Geneva",sans-serif;
+  font-family: "Geneva", sans-serif;
   font-weight: 300;
   font-size: 10px;
   color: #7d7d7d;
