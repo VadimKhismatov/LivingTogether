@@ -4,8 +4,9 @@
     font-family: $proximaSemibold;
     font-size: 19px;
     color: $mainTextColor;
-    margin: 35px 0 0 23px;
+    margin: 35px 0 0 0;
     letter-spacing: -0.7px;
+    text-align: center;
 }
 
 .partner__text{
@@ -20,6 +21,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 22px;
+    padding: 0 10px 0 10px;
+    @include rmin(480){
+        justify-content: center;
+    };
 }
 
 .partner{
@@ -29,7 +34,6 @@
 }
 
 .partner__text{
-    padding-right: 17px;
     text-align: center;
 }
 

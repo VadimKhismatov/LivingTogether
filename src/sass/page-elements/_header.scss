@@ -1,49 +1,34 @@
 /*header*/
+header{
+  justify-content: center;
+  padding-top: 70px;
+  background-image: url("../img/sky-bg.png");
+  background-repeat: no-repeat;
+  background-position: center -339px;
+}
+
 .container--head{
-    @media only screen and (min-width:1024px){
-    width: 1150px;
-    }
+    flex-direction: column;
+    align-content: center;
+}
+
+.logo{
+    text-align: center;
 }
 
 /*top menu*/
+
 .top_menu{
-    padding: 10px 0 0 32px;
+    padding: 10px 0 0 0px;
 }
-.menu--top{
-    margin-bottom: 6px;
+
+.menu{
+    flex-direction: column;
+    
 }
 .menu_item{
     display: flex;
-}
-.menu_item--polls{
-    margin: 0px 0 0px 24px;
-}
-.menu_item--comunication{
-    margin: 0 0 0px 45px;
-}
-
-.menu_item--invest{
-    margin: 0 0 0 40px;
-}
-
-.menu_item--contacts{
-    margin: 0 0 0 51px;
-}
-
-.menu_item--partners_livingtogether{
-     margin: 0 0 0 20px;
-}
-
-.menu_item--question{
-    margin: 0 0 0 13px;
-}
-
-.menu_item--typical_decoration{
-    margin: 0 0px 0 26px;
-}
-
-.menu_item--club_cart{
-    margin: 0 0 0 18px;
+    justify-content: center;
 }
 
 
@@ -53,7 +38,7 @@
 
     }
 }*/
-
+/*
 
 .menu__img--rent {
   background-image: url("../img/sprite.png");
@@ -123,10 +108,10 @@
   width: 16px;
   height: 11px;
   background-position: -496px -280px;
-}
+}*/
 
 .menu__img{
-    display: block;
+    display: none;
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
@@ -134,12 +119,13 @@
 
 .menu__link{
     display: block;
+    padding: 5px 0 5px 0;
     @include geneva;
-    font-size: 12px;
+    font-size: 14px;
     color: $mainTextColor;
     letter-spacing: 0.1px;
 }
-.menu__link--rent{
+/*.menu__link--rent{
     margin: 0 0 0 3px;
     letter-spacing: 0.3px;
 }
@@ -184,6 +170,6 @@
     margin: 0 0 0 7px;
     padding-top: 1px;
     letter-spacing: 0.3px;
-}
+}*/
 
 

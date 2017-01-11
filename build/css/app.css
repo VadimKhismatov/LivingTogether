@@ -355,46 +355,6 @@ body {
   max-width: 1018px;
 }
 
-header {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-top: 70px;
-  background-image: url("../img/sky-bg.png");
-  background-repeat: no-repeat;
-  background-position: 297px -319px;
-}
-
-.slider_block {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.information_block {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.news_block {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.partners_block {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.footer {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .block {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -402,52 +362,47 @@ header {
 }
 
 /*header*/
+header {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 70px;
+  background-image: url("../img/sky-bg.png");
+  background-repeat: no-repeat;
+  background-position: center -339px;
+}
+
+.container--head {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.logo {
+  text-align: center;
+}
 
 /*top menu*/
 .top_menu {
-  padding: 10px 0 0 32px;
+  padding: 10px 0 0 0px;
 }
 
-.menu--top {
-  margin-bottom: 6px;
+.menu {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .menu_item {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.menu_item--polls {
-  margin: 0px 0 0px 24px;
-}
-
-.menu_item--comunication {
-  margin: 0 0 0px 45px;
-}
-
-.menu_item--invest {
-  margin: 0 0 0 40px;
-}
-
-.menu_item--contacts {
-  margin: 0 0 0 51px;
-}
-
-.menu_item--partners_livingtogether {
-  margin: 0 0 0 20px;
-}
-
-.menu_item--question {
-  margin: 0 0 0 13px;
-}
-
-.menu_item--typical_decoration {
-  margin: 0 0px 0 26px;
-}
-
-.menu_item--club_cart {
-  margin: 0 0 0 18px;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /*@each  in rent, polls, communication,invest,contacts,news,partners, question, typical-decoration, club-cart{
@@ -456,6 +411,8 @@ header {
 
     }
 }*/
+/*
+
 .menu__img--rent {
   background-image: url("../img/sprite.png");
   width: 13px;
@@ -524,10 +481,9 @@ header {
   width: 16px;
   height: 11px;
   background-position: -496px -280px;
-}
-
+}*/
 .menu__img {
-  display: block;
+  display: none;
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -535,97 +491,94 @@ header {
 
 .menu__link {
   display: block;
+  padding: 5px 0 5px 0;
   font-family: "Geneva", sans-serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
   color: #2b2b2b;
   letter-spacing: 0.1px;
 }
 
-.menu__link--rent {
-  margin: 0 0 0 3px;
-  letter-spacing: 0.3px;
+/*.menu__link--rent{
+    margin: 0 0 0 3px;
+    letter-spacing: 0.3px;
+}
+.menu__link--polls{
+    margin: 0 0 0 8px;
+}
+.menu__link--communication{
+    margin: 0 0 0 3px;
+    letter-spacing: 0.1px;
 }
 
-.menu__link--polls {
-  margin: 0 0 0 8px;
+.menu__link--invest{
+    margin: 0 0 0 6px;
+    letter-spacing: 0.2px;
 }
 
-.menu__link--communication {
-  margin: 0 0 0 3px;
-  letter-spacing: 0.1px;
+.menu__link--contacts{
+    margin: 0 0 0 6px;
+    letter-spacing: 0.6px;
 }
 
-.menu__link--invest {
-  margin: 0 0 0 6px;
-  letter-spacing: 0.2px;
+.menu__link--news{
+    margin: 0 1px 0 0;
+}
+.menu__link--partners{
+    margin: 0 0 0 11px;
 }
 
-.menu__link--contacts {
-  margin: 0 0 0 6px;
-  letter-spacing: 0.6px;
+.menu__link--question{
+    margin: 0 0 0 7px;
+    padding-top: 2px;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+}
+.menu__link--typical-decoration{
+    margin: 0 0 0 2px;
+    padding-top: 1px;
+    letter-spacing: 0.5px;
 }
 
-.menu__link--news {
-  margin: 0 1px 0 0;
-}
-
-.menu__link--partners {
-  margin: 0 0 0 11px;
-}
-
-.menu__link--question {
-  margin: 0 0 0 7px;
-  padding-top: 2px;
-  font-size: 11px;
-  letter-spacing: 0.2px;
-}
-
-.menu__link--typical-decoration {
-  margin: 0 0 0 2px;
-  padding-top: 1px;
-  letter-spacing: 0.5px;
-}
-
-.menu__link--club-cart {
-  margin: 0 0 0 7px;
-  padding-top: 1px;
-  letter-spacing: 0.3px;
-}
-
+.menu__link--club-cart{
+    margin: 0 0 0 7px;
+    padding-top: 1px;
+    letter-spacing: 0.3px;
+}*/
 /*clider block*/
 .container--slider {
-  width: 1150px;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-right: 10px;
   overflow: hidden;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /*slider*/
 .slider {
-  width: 100%;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  width: 320px;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: lightyellow;
 }
 
 .slide {
+  width: 287px;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 287px;
+  margin: 0 5.2% 0 5.2%;
   padding: 41px 0 0 0px;
   position: relative;
 }
 
 .slider__link {
   position: absolute;
-  display: block;
+  display: none;
   width: 37px;
   height: 37px;
   background-image: url("../img/sprite.png");
@@ -648,11 +601,11 @@ header {
 .head {
   width: 100%;
   color: #2b2b2b;
-  padding-left: 40px;
 }
 
 .head__type {
-  font-family: "Proxima Nova  Semibold", sans-serif;
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-weight: bold;
   font-size: 24px;
   padding: 0 0 0 3px;
 }
@@ -669,7 +622,7 @@ header {
 
 .slide__img {
   margin: 9px auto 0 auto;
-  z-index: -1;
+  width: 100%;
 }
 
 .additional_img_wrapper {
@@ -787,10 +740,12 @@ header {
 
 .additional_info__location_icon {
   background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  background-position: -496px -197px;
-  width: 20px;
+  width: 18px;
   height: 24px;
+  background-position: -498px -166px;
+  background-repeat: no-repeat;
+  /*width: 20px;
+    height: 24px;*/
   margin: 0px 6px 0 0px;
 }
 
@@ -829,10 +784,15 @@ header {
 }
 
 /*information block*/
+.container--information {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .main_info {
-  width: 708px;
   color: #2b2b2b;
-  padding: 45px 0 0 21px;
+  padding: 45px 10px 0 10px;
 }
 
 .main_info__text {
@@ -848,7 +808,6 @@ header {
 .info_list {
   margin-top: 7px;
   margin-bottom: 10px;
-  padding-left: 16px;
 }
 
 .info-list__item {
@@ -869,7 +828,6 @@ header {
 
 /*technical block*/
 .tech_info {
-  width: 298px;
   padding-top: 46px;
 }
 
@@ -921,8 +879,13 @@ header {
   color: #2b2b2b;
 }
 
+.club__img_wrapper {
+  text-align: center;
+}
+
 .club__info {
-  margin: 13px 0 0 49px;
+  margin: 13px 0 0 0;
+  padding: 0 10px 0 10px;
 }
 
 .club__title {
@@ -969,7 +932,7 @@ header {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0 38px 0 38px;
+  padding: 0 10px 0 10px;
 }
 
 .news_panel__title {
@@ -995,12 +958,11 @@ header {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 25px;
-  padding: 0 0 0 22px;
+  padding: 0 10px 0 10px;
 }
 
 .news__item {
-  width: 293px;
-  padding: 0 0 0 15px;
+  margin-bottom: 10px;
   font-family: "Geneva", sans-serif;
   font-weight: 300;
   color: #2b2b2b;
@@ -1033,8 +995,9 @@ header {
   font-family: "Proxima Nova  Semibold", sans-serif;
   font-size: 19px;
   color: #2b2b2b;
-  margin: 35px 0 0 23px;
+  margin: 35px 0 0 0;
   letter-spacing: -0.7px;
+  text-align: center;
 }
 
 .partner__text {
@@ -1055,6 +1018,7 @@ header {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 22px;
+  padding: 0 10px 0 10px;
 }
 
 .partner {
@@ -1064,7 +1028,6 @@ header {
 }
 
 .partner__text {
-  padding-right: 17px;
   text-align: center;
 }
 
@@ -1178,14 +1141,14 @@ header {
   background-image: url("../img/sprite.png");
   width: 81px;
   height: 57px;
-  background-position: -177px -274px;
+  background-position: -86px -274px;
 }
 
 .partner__icon--security-system {
   background-image: url("../img/sprite.png");
   width: 81px;
   height: 57px;
-  background-position: -86px -274px;
+  background-position: -177px -274px;
 }
 
 .partner__icon--drinking-water {
@@ -1301,7 +1264,7 @@ header {
 .footer__title {
   position: absolute;
   top: -8px;
-  left: 388px;
+  left: 0;
   width: 261px;
   background-color: #fff;
   font-family: "Proxima Nova  Semibold", sans-serif;
@@ -1327,137 +1290,12 @@ header {
   margin: 10px 15px 0 0;
 }
 
-@media only screen and (min-width: 1024px){
-  .container--head{
-    width: 1150px;
-  }
-}
-
-@media only screen and (max-width: 425px){
-
-  /*header block begin*/
-  header{
-    background-position: center -336px;
-  }
-  .container--head{
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .logo{
-    text-align: center;
-  }
-  .top_menu{
-    padding: 10px 0 0 0;
-  }
-
-  /*menu begin*/
-  .menu{
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .menu--top{
-    margin: 0;
-  }
-  .menu_item{
-    margin: 0;
+@media only screen and (min-width: 480px){
+  .partners{
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .menu__img{
-    display: none;
-  }
-  .menu__link{
-    margin: 0;
-    padding: 5px 0 5px 0;
-    font-size: 14px;
-  }
-
-  /*menu end*/
-
-  /*header block end*/
-
-  /*slider block begin*/
-  .container--slider{
-    width: 100%;
-    padding-right: 0;
-    overflow: hidden;
-  }
-
-  /*slider arrows begin*/
-  .slider__link{
-    display: none;
-  }
-
-  /*slider arrows end*/
-
-  /*slide begin*/
-  .slide{
-    width: 100%;
-  }
-
-  /*slide end*/
-
-  /*slider block end*/
-
-  /*information block begin*/
-  .container--information{
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  /*main info block begin*/
-  .main_info{
-    width: 100%;
-    padding: 45px 10px 0 10px;
-  }
-  .main_info__paragraf{
-    text-indent: 15px;
-  }
-  .main_info__paragraf--last{
-    margin-top: 10px;
-  }
-
-  /*main info block end*/
-
-  /*tech info begin*/
-  .tech_info{
-    width: 100%;
-  }
-  .club__img_wrapper{
-    text-align: center;
-  }
-
-  /*tech info end*/
-
-  /*information block end*/
-
-  /*news block begin*/
-  .news_panel__all_news_link{
-    margin-top: 5px;
-  }
-  .news__item{
-    margin-bottom: 10px;
-  }
-
-  /*news block end*/
-
-  /*partners block begin*/
-  .partners_block__title{
-    margin-left: 0;
-    text-align: center;
-  }
-  .partners{
-    padding: 0 10px 0 10px;
-  }
-
-  /*partners block end*/
 }
 
 /*# sourceMappingURL=app.css.map */

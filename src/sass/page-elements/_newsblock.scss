@@ -12,7 +12,7 @@
 .news_panel{
     display: flex;
     justify-content: space-between;
-    padding: 0 38px 0 38px;
+    padding: 0 10px 0 10px;
 }
 
 .news_panel__title{
@@ -31,12 +31,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 25px;
-    padding: 0 0 0 22px;
+    padding: 0 10px 0 10px;
 }
 
 .news__item{
-    width: 293px;
-    padding: 0 0 0 15px;
+    margin-bottom: 10px;
     @include geneva;
     color: $mainTextColor;
     font-size: 13px;

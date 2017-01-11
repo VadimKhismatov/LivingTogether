@@ -1,4 +1,4 @@
-@media only screen and (max-width:425px){
+@media only screen and (min-width:320px) and (max-width:480px){
     /*header block begin*/
     header{
         background-position: center -336px;
@@ -128,4 +128,22 @@
     }
 
     /*partners block end*/
+
+    /*footer begin*/
+.footer{
+    padding: 0 10px 0 10px;
+}
+
+    .footer__title{
+        left: 0px;
+    }
+
+    .footer__text{
+        margin-top: 25px;
+    }
+
+    .footer__logo{
+        margin-top: 25px;
+    }
+    /*footer end*/
 }

@@ -11,10 +11,17 @@ sayHello();
 
 /*$(document).ready(function () {
     $(".slider").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         nextArrow: $(".slider__link--right"),
-        prevArrow: $(".slider__link--left")
+        prevArrow: $(".slider__link--left"),
+        responsive:[
+            {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 });*/
