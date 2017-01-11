@@ -1,5 +1,9 @@
 /*partners block*/
-
+@include rmin(1200){
+    .partners_block{
+        justify-content: center;
+    }
+}
 .partners_block__title{
     font-family: $proximaSemibold;
     font-size: 19px;
@@ -7,6 +11,15 @@
     margin: 35px 0 0 0;
     letter-spacing: -0.7px;
     text-align: center;
+
+    @include rmin(900){
+        margin-left: 10px;
+        text-align: left;
+    }
+    @include rmin(1024){
+        margin-left: 38px;
+        text-align: left;
+    }
 }
 
 .partner__text{
@@ -22,8 +35,12 @@
     flex-wrap: wrap;
     margin-top: 22px;
     padding: 0 10px 0 10px;
-    @include rmin(480){
+    @include rmin(426){
         justify-content: center;
+    };
+    @include rmin(1024){
+        justify-content: flex-start;
+        padding: 0 0 0 18px;
     };
 }
 

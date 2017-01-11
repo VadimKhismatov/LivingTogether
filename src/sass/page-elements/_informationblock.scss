@@ -1,10 +1,24 @@
 /*information block*/
 .container--information{
  flex-direction: column;
+
+ @include rmin(768){
+     flex-direction: row;
+ }
 }
 .main_info{
     color: $mainTextColor;
     padding: 45px 10px 0 10px;
+
+    @include rmin(768){
+        width:60%;
+    }
+}
+
+@include rmin(1200){
+    .information_block{
+        justify-content: center;
+    }
 }
 
 .main_info__text{
@@ -40,10 +54,15 @@
 
 .tech_info{
     padding-top: 46px;
+
+    @include rmin(768){
+        width: 40%;
+    }
 }
 .support{
     display: flex;
     padding: 1px 0 0 11px;
+    
 }
 
 .support__img{
@@ -90,6 +109,7 @@
 .club__info{
     margin: 13px 0 0 0;
     padding: 0 10px 0 10px;
+
 }
 
 .club__title{

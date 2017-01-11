@@ -1,15 +1,33 @@
-/*clider block*/
+/*slider block*/
 .container--slider{
     overflow: hidden;
     justify-content: center;
     
+}
+
+@include rmin(1200){
+    .slider_block{
+        justify-content: center;
+    }
 }
 /*slider*/
 .slider{
     width: 320px;
     overflow: hidden;
     display: flex;
-    background-color:lightyellow;
+
+    @include rmin(480){
+        width:480px;
+    }
+    @include rmin(590){
+        width:590px;
+    }
+    @include rmin(768){
+        width:650px;
+    }
+    @include rmin(768){
+        width:1018px;
+    }
 }
 
 .slide{
@@ -19,11 +37,29 @@
     margin: 0 5.2% 0 5.2%;
     padding: 41px 0 0 0px;
     position: relative;
+    
+    @include rmin(480){
+        margin: 0 19% 0 20%;
+    }
+    @include rmin(590){
+        margin: 0 19% 0 20%;
+    }
+    @include rmin(768){
+        margin: 0 1% 0 5%;
+    }
+    @include rmin(768){
+        margin: 0 1% 0 4%;
+    }
 }
 
 .slider__link{
     position:absolute;
     display: none;
+
+    @include rmin(1200){
+        display: block;
+    }
+
     width:37px;
     height:37px;
     background-image: url("../img/sprite.png");
@@ -34,12 +70,12 @@
 .slider__link--left{
     background-position: -267px -350px;
     top: 366px;
-    left: 363px;
+    left: 151px;
 }
 .slider__link--right{
     background-position: -307px -350px;
     top: 366px;
-    right: 390px;
+    right: 198px;
 }
 
 .head{
@@ -65,6 +101,10 @@
 .slide__img{
     margin: 9px auto 0 auto;
     width: 100%;
+
+    @include rmin(590){
+        width: auto;
+    }
 }
 
 .additional_img_wrapper{
@@ -72,7 +112,7 @@
     height: 127px;
     position: absolute;
     top: 221px;
-    left: 30px;
+    left: 0;
 }
 .slide__additional_img{
         width:100%;

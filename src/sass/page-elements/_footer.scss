@@ -5,6 +5,10 @@
     height: 167px;
     box-sizing: border-box;
     border-top:1px solid #dadada;
+
+    @include rmin(1200){
+        justify-content: center;
+    }
 }
 .container--footer{
     display: flex;
@@ -25,7 +29,7 @@
 }
 
 .footer__text{
-    margin: 16px 0 0 1px;
+    margin: 16px 0 0 10px;
     @include geneva;
     font-size: 10px;
     color: #7d7d7d;

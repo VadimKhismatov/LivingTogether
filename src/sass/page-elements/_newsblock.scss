@@ -1,4 +1,10 @@
 /*news block*/
+@include rmin(1200){
+.news_block{
+    justify-content: center;
+}
+
+}
 
 .news{
     width: 100%;
@@ -13,6 +19,10 @@
     display: flex;
     justify-content: space-between;
     padding: 0 10px 0 10px;
+
+    @include rmin(1024){
+        padding: 0 38px 0 38px;
+    }
 }
 
 .news_panel__title{
@@ -32,6 +42,10 @@
     flex-wrap: wrap;
     margin-top: 25px;
     padding: 0 10px 0 10px;
+
+    @include rmin(1024){
+        padding: 0 38px 0 38px;
+    }
 }
 
 .news__item{
@@ -39,6 +53,10 @@
     @include geneva;
     color: $mainTextColor;
     font-size: 13px;
+
+    @include rmin(1024){
+        width: 29%;
+    }
 }
 
 
