@@ -1,6 +1,8 @@
 {% import "data/data.html" as data %} {% for slide in data.slides %}
 <!--COLUMN begin-->
+
 <div class="slide block">
+
     <div class="head">
 
         <span class="head__type">{{slide.type}}</span>
@@ -14,13 +16,15 @@
     </div>
     {% if slide.additionalImg %}
     <div class="additional_img_wrapper">
-        <img src="img/{{slide.additionalImg}}.png" class="slide__additional_img"/>
+        <img src="img/{{slide.additionalImg}}.png" class="slide__additional_img" />
     </div>
     {%endif%}
 
     <form class="authorisation">
         <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта">
-        <input type="text" class="authorisation__input authorisation__input--login" placeholder="Логин">
+        <p class="authorisation__icon--email"></p>
+        <input type="text" class="authorisation__input " placeholder="Логин">
+        <p class="authorisation__icon--login"></p>
         <div class="authorisation__controls_block">
             <div class="authorisation__links_wrapper">
                 <a href="#!" class="authorisation__link">Забыли пароль?</a>
@@ -32,11 +36,11 @@
         </div>
     </form>
 
-    <div class="additional_info">
-        <p class="additional_info__tel">Продажи <span class="additional_info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
+    <div class="info">
+        <p class="info__tel">Продажи <span class="info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
         <div class="location_wrapper">
-            <p class="additional_info__location_icon"></p>
-            <a class="additional_info__location_link" href="#!">Как добраться до объекта?</a>
+            <p class="info__location_icon"></p>
+            <a class="info__location_link" href="#!">Как добраться до объекта?</a>
         </div>
     </div>
 </div>

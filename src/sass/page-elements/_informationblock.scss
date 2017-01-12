@@ -9,41 +9,25 @@
 .main_info{
     color: $mainTextColor;
     padding: 45px 10px 0 10px;
-
+    @include geneva;
+    font-size:13px;
     @include rmin(768){
         width:60%;
     }
+    @include rmin(1024){
+        width: 65%;
+        padding: 31px 6px 0 14px;
+    }
 }
 
-@include rmin(1200){
+@include rmin(1024){
     .information_block{
         justify-content: center;
     }
 }
 
-.main_info__text{
-    @include geneva;
-    font-size:13px;
-    
-}
 .main_info__paragraf{
     line-height: 20px;
-}
-.info_list{
-    margin-top: 7px;
-    margin-bottom:10px;
-}
-
-.info-list__item{
-    position: relative;
-    margin-bottom: 2px;
-    padding-left: 20px;
-
-    &::before{
-        content: "-";
-        position: absolute;
-        left:8px;
-    }
 }
 
 .main_info__link{
@@ -58,10 +42,18 @@
     @include rmin(768){
         width: 40%;
     }
+    @include rmin(1024){
+        width: 35%;
+        padding-top: 31px;
+    }
 }
 .support{
     display: flex;
     padding: 1px 0 0 11px;
+    
+    @include rmin(1024){
+        padding: 4px 0 0 47px;
+    }
     
 }
 
@@ -83,12 +75,12 @@
     letter-spacing: 0.2px;
 }
 .support__telephone-bold{
-    font-family: $proximaSemibold;
+    @include proximaBold;
     font-size: 19px;
     color: #353535;
     line-height: 16px;
     padding-left: 7px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
 }
 .support__text{
     font-family: "Arial";
@@ -105,6 +97,9 @@
 }
 .club__img_wrapper{
     text-align: center;
+    @include rmin(1024){
+        padding-left: 13px;
+    }
 }
 .club__info{
     margin: 13px 0 0 0;
@@ -116,6 +111,10 @@
     @include proximaBold;
     font-size: 23px;
     letter-spacing: -0.3px;
+
+    @include rmin(1024){
+        padding-left: 74px;
+    }
 }
 
 .club__text{
@@ -124,6 +123,12 @@
     padding: 6px 0 0 0;
     line-height: 20px;
     letter-spacing: 0.5px;
+    
+
+    @include rmin(1024){
+        padding: 6px 0 0 75px;
+        letter-spacing: 0.8px;
+    }
 }
 
 .club__link{
@@ -134,4 +139,8 @@
     color: $mainTextColor;
     opacity: .4;
     letter-spacing: 0.4px;
+
+    @include rmin(1024){
+        margin: 17px 0 0 75px;
+    }
 }

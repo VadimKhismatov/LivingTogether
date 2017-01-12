@@ -29,6 +29,7 @@ header{
 
 .top_menu{
     padding: 10px 0 0 0px;
+    
     @include rmin(480){
         display: flex;
     }
@@ -36,7 +37,8 @@ header{
         flex-direction: column;
     }
     @include rmin(1200){
-        margin-left: 26px;
+        margin-left: 25px;
+        padding-top: 8px;
     }
 }
 
@@ -53,6 +55,12 @@ header{
     }
     
 }
+
+@include rmin(1200){
+    .menu--second{
+        margin: 8px 0 0 8px;
+    }
+}
 .menu_item{
     display: flex;
     justify-content: center;
@@ -60,9 +68,19 @@ header{
         margin: 0 10px 0 10px;
     }
     @include rmin(1200){
-        margin: 0 0 0 0;
+        margin: 0 25px 0 0;
+    }
+    span,strong{
+    font-weight: 300;
+    vertical-align: middle;
+    }
+    @include rmin(1200){
+        strong{
+            text-decoration: underline;
+        }
     }
 }
+
 
 
 @each $ic in rent, polls, communication,invest,contacts,news,partners, question, typical-decoration, club-cart{
@@ -76,8 +94,9 @@ header{
 
 .menu__img{
     display: none;
-    @include rmin(768){
-        display: block;
+    
+    @include rmin(1200){
+        display: inline-block;
     }
     /*width: 20px;
     height: 20px;*/
@@ -87,6 +106,11 @@ header{
 .menu__link{
     display: block;
     padding: 5px 0 5px 0;
+    
+    @include rmin(1200){
+        padding: 0 0 0 0;
+        text-decoration: none;
+    }
     @include geneva;
     font-size: 14px;
     color: $mainTextColor;

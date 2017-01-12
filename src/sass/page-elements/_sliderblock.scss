@@ -5,28 +5,27 @@
     
 }
 
-@include rmin(1200){
+@include rmin(1024){
     .slider_block{
         justify-content: center;
+        position: relative;
     }
 }
 /*slider*/
 .slider{
-    width: 320px;
+    width: 287px;
     overflow: hidden;
     display: flex;
 
-    @include rmin(480){
-        width:480px;
-    }
-    @include rmin(590){
-        width:590px;
-    }
-    @include rmin(768){
+    @include rmin(700){
         width:650px;
     }
     @include rmin(768){
+        width:700px;
+    }
+    @include rmin(1024){
         width:1018px;
+        justify-content: space-around;
     }
 }
 
@@ -34,22 +33,25 @@
     width: 287px;
     flex-direction: column;
     align-items: center;
-    margin: 0 5.2% 0 5.2%;
+    margin: 0 auto 0 auto;
     padding: 41px 0 0 0px;
     position: relative;
     
     @include rmin(480){
-        margin: 0 19% 0 20%;
+        margin: 0 auto 0 auto;
     }
     @include rmin(590){
-        margin: 0 19% 0 20%;
+        margin: 0 auto 0 auto;
     }
     @include rmin(768){
-        margin: 0 1% 0 5%;
+        margin: 0 auto 0 auto;
     }
-    @include rmin(768){
-        margin: 0 1% 0 4%;
+    @include rmin(1024){
+        margin: 0 0 0 0;
     }
+}
+.slick-slide{
+    width: 287px;
 }
 
 .slider__link{
@@ -60,21 +62,21 @@
         display: block;
     }
 
-    width:37px;
-    height:37px;
-    background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     z-index: 5;
 }
 
 .slider__link--left{
-    background-position: -267px -350px;
-    top: 366px;
+
+    @include s(arrow-left);
+
+    top: 235px;
     left: 151px;
 }
 .slider__link--right{
-    background-position: -307px -350px;
-    top: 366px;
+
+    @include s(arrow-right);
+    top: 235px;
     right: 198px;
 }
 
@@ -84,6 +86,7 @@
 }
 
 .head__type{
+
     @include proximaBold;
     font-size: 24px;
     padding: 0 0 0 3px;
@@ -143,6 +146,7 @@
     align-items: center;
     background-color: #f3f3f3;
     border-radius: 10px;
+    position: relative;
 }
 .authorisation__controls_block{
     width: 100%;
@@ -150,31 +154,36 @@
     justify-content: space-between;
     margin-top: 9px;
 }
+
+.authorisation__icon--email{
+    @include s(login-person);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 28px;
+    left: 35px;
+}
+
+.authorisation__icon--login{
+    @include s(login-key);
+    background-repeat: no-repeat;  
+    position: absolute;
+    top: 70px;
+    left: 35px;
+}
+
 .authorisation__input{
     width:238px;
     height: 41px;
+    padding-left: 32px;
     box-sizing: border-box;
     border: 1px solid #d4d4d4;
     border-radius: 7px;
     @include geneva;
     font-size: 13px;
+    letter-spacing: 0.5px;
 }
-
 .authorisation__input--email{
     margin-bottom: 8px;
-    background-image: url("../img/login-person.png");
-    background-repeat: no-repeat;
-    background-position: 7px 8px;
-    padding-left: 30px;
-    letter-spacing: 0.6px;
-}
-
-.authorisation__input--login{
-    background-image: url("../img/login-key.png");
-    background-repeat: no-repeat;
-    background-position: 9px 8px;
-    padding-left: 32px;
-    letter-spacing: 0.4px;
 }
 
 .authorisation__submit{
@@ -202,13 +211,13 @@
 }
 
 
-.additional_info{
+.info{
     width:287px;
     margin: 11px auto 0 auto;
     text-align: center;
 }
 
-.additional_info__location_icon{
+.info__location_icon{
     @include s(location-pin);
     background-repeat: no-repeat;
     
@@ -222,7 +231,7 @@
     justify-content: center;
 }
 
-.additional_info__location_link{
+.info__location_link{
     display: block;
     @include geneva;
     font-size: 11px;
@@ -232,7 +241,7 @@
     letter-spacing: 0.5px;
 }
 
-.additional_info__tel{
+.info__tel{
     padding: 1px 0 0 0;
     font-family: $proxima;
     font-size: 13px;
@@ -240,7 +249,7 @@
     color: #2b2b2b;
 }
 
-.additional_info__tel--bold{
+.info__tel--bold{
     @include proximaBold;
     font-size: 20px;
 }

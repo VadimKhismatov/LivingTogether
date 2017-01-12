@@ -2753,19 +2753,43 @@ sayHello();
 
 //slider
 
-/*$(document).ready(function () {
+$(document).ready(function () {
     $(".slider").slick({
-        arrows: false,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
         nextArrow: $(".slider__link--right"),
         prevArrow: $(".slider__link--left"),
-        responsive:[
-            {
-                breakpoint: 481,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+        variableWidth: false,
+        responsive: [{
+            breakpoint: 700,
+            settings: {
+                arrows: false,
+                slidesToShow: 1,
+                slideToScroll: 1
             }
-        ]
+        }, {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                slidesToShow: 2,
+                slideToScroll: 1
+            }
+        }, {
+            breakpoint: 1023,
+            settings: {
+                arrows: false,
+                slidesToShow: 2,
+                slideToScroll: 1
+            }
+        }, {
+            breakpoint: 1200,
+            settings: {
+                arrows: false,
+                variableWidth: false,
+                slidesToShow: 3,
+                slideToScroll: 1
+            }
+        }]
     });
-});*/
+});
