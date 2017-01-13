@@ -72,12 +72,38 @@
 
     top: 235px;
     left: 151px;
+
+    @include rmin(1200){
+        left: 60px;
+    }
+    @include rmin(1400){
+        left: 120px;
+    }
+    @include rmin(1600){
+        left: 240px;
+    }
+    @include rmin(1700){
+        left: 300px;
+    }
 }
 .slider__link--right{
 
     @include s(arrow-right);
     top: 235px;
     right: 198px;
+
+    @include rmin(1200){
+        right: 60px;
+    }
+    @include rmin(1400){
+        right: 120px;
+    }
+    @include rmin(1600){
+        right: 240px;
+    }
+    @include rmin(1700){
+        right: 300px;
+    }
 }
 
 .head{

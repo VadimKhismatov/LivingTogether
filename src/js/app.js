@@ -22,6 +22,7 @@ $(document).ready(function () {
                 breakpoint: 700,
                 settings: {
                     arrows: false,
+                    autoplay: true,
                     slidesToShow: 1,
                     slideToScroll: 1
                 }

@@ -53,6 +53,11 @@ header{
         flex-direction: row;
         justify-content: space-around;
     }
+    @include rmin(1200){
+        width:100%;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
     
 }
 
@@ -68,7 +73,7 @@ header{
         margin: 0 10px 0 10px;
     }
     @include rmin(1200){
-        margin: 0 25px 0 0;
+        margin: 0 0 0 0;
     }
     span,strong{
     font-weight: 300;
@@ -77,6 +82,37 @@ header{
     @include rmin(1200){
         strong{
             text-decoration: underline;
+        }
+
+        &--rent{
+            margin: 0 0 0 11px;
+        }
+        &--polls{
+            margin: 0 0 0 30px;
+        }
+        &--communication{
+            margin: 0 0 0 56px;
+        }
+        &--invest{
+            margin: 0 0 0 43px;
+        }
+        &--contacts{
+            margin: 0 0 0 54px;
+        }
+        &--news{
+            margin: 0 0 0 1px;
+        }
+        &--partners_livingtogether{
+            margin: 0px 0 0 26px;
+        }
+        &--question{
+            margin: 0 0 0 29px;
+        }
+        &--typical_decoration{
+            margin: 0px 0 0 20px;
+        }
+        &--club_cart{
+            margin: 0px 0 0 28px;
         }
     }
 }
@@ -117,6 +153,7 @@ header{
 
     @include rmin(1200){
         font-size: 12px;
+
     }
 }
 

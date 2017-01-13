@@ -759,7 +759,7 @@ header {
   flex-direction: column;
 }
 
-.main_info {
+.article {
   color: #2b2b2b;
   padding: 45px 10px 0 10px;
   font-family: "Geneva", sans-serif;
@@ -767,11 +767,16 @@ header {
   font-size: 13px;
 }
 
-.main_info__paragraf {
+.article p {
   line-height: 20px;
 }
 
-.main_info__link {
+.article ul {
+  margin: 30px 0 30px 2px;
+  line-height: 20px;
+}
+
+.article a {
   color: #2f96cb;
 }
 
@@ -1309,7 +1314,7 @@ header {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  .main_info{
+  .article{
     width: 60%;
   }
   .tech_info{
@@ -1351,9 +1356,9 @@ header {
   .slide{
     margin: 0 0 0 0;
   }
-  .main_info{
-    width: 65%;
-    padding: 31px 6px 0 14px;
+  .article{
+    width: 68%;
+    padding: 31px 0 0 14px;
   }
   .information_block{
     -webkit-justify-content: center;
@@ -1361,24 +1366,24 @@ header {
     justify-content: center;
   }
   .tech_info{
-    width: 35%;
+    width: 30%;
     padding-top: 31px;
   }
   .support{
-    padding: 4px 0 0 47px;
+    padding: 4px 0 0 17px;
   }
   .club__img_wrapper{
-    padding-left: 13px;
+    padding-left: 3px;
   }
   .club__title{
-    padding-left: 74px;
+    padding-left: 43px;
   }
   .club__text{
-    padding: 6px 0 0 75px;
-    letter-spacing: 0.8px;
+    padding: 7px 0 0 45px;
+    letter-spacing: 0.2px;
   }
   .club__link{
-    margin: 17px 0 0 75px;
+    margin: 17px 0 0 44px;
   }
   .news_block{
     -webkit-justify-content: center;
@@ -1404,7 +1409,7 @@ header {
     justify-content: center;
   }
   .partners_block__title{
-    margin-left: 12px;
+    margin-left: 38px;
     text-align: left;
     letter-spacing: -1.3px;
   }
@@ -1438,14 +1443,53 @@ header {
     margin-left: 25px;
     padding-top: 8px;
   }
+  .menu{
+    width: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
   .menu--second{
     margin: 8px 0 0 8px;
   }
   .menu_item{
-    margin: 0 25px 0 0;
+    margin: 0 0 0 0;
   }
   .menu_item strong{
     text-decoration: underline;
+  }
+  .menu_item--rent{
+    margin: 0 0 0 11px;
+  }
+  .menu_item--polls{
+    margin: 0 0 0 30px;
+  }
+  .menu_item--communication{
+    margin: 0 0 0 56px;
+  }
+  .menu_item--invest{
+    margin: 0 0 0 43px;
+  }
+  .menu_item--contacts{
+    margin: 0 0 0 54px;
+  }
+  .menu_item--news{
+    margin: 0 0 0 1px;
+  }
+  .menu_item--partners_livingtogether{
+    margin: 0px 0 0 26px;
+  }
+  .menu_item--question{
+    margin: 0 0 0 29px;
+  }
+  .menu_item--typical_decoration{
+    margin: 0px 0 0 20px;
+  }
+  .menu_item--club_cart{
+    margin: 0px 0 0 28px;
   }
   .menu__img{
     display: inline-block;
@@ -1460,11 +1504,44 @@ header {
   .slider__link{
     display: block;
   }
+  .slider__link--left{
+    left: 60px;
+  }
+  .slider__link--right{
+    right: 60px;
+  }
   .footer__title{
-    left: -61px;
+    left: -41px;
   }
   .footer__logo{
     margin: 10px 25px 0 0;
+  }
+}
+
+@media only screen and (min-width: 1400px){
+  .slider__link--left{
+    left: 120px;
+  }
+  .slider__link--right{
+    right: 120px;
+  }
+}
+
+@media only screen and (min-width: 1600px){
+  .slider__link--left{
+    left: 240px;
+  }
+  .slider__link--right{
+    right: 240px;
+  }
+}
+
+@media only screen and (min-width: 1700px){
+  .slider__link--left{
+    left: 300px;
+  }
+  .slider__link--right{
+    right: 300px;
   }
 }
 
