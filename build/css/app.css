@@ -573,7 +573,7 @@ header {
   font-weight: bold;
   font-size: 40px;
   color: #f8b22b;
-  line-height: 31px;
+  line-height: 0.775;
   letter-spacing: -0.9px;
 }
 
@@ -733,7 +733,7 @@ header {
   font-weight: 300;
   font-size: 11px;
   color: #2b2b2b;
-  line-height: 24px;
+  line-height: 2.182;
   margin: 3px 0 0 0;
   letter-spacing: 0.5px;
 }
@@ -768,12 +768,18 @@ header {
 }
 
 .article p {
-  line-height: 20px;
+  line-height: 1.54;
+  margin: 0 32px 0 0;
+}
+
+.article p:last-child {
+  margin-top: 21px;
 }
 
 .article ul {
   margin: 30px 0 30px 2px;
-  line-height: 20px;
+  line-height: 1.54;
+  padding: 0 0 0 19px;
 }
 
 .article a {
@@ -815,7 +821,7 @@ header {
   font-weight: bold;
   font-size: 19px;
   color: #353535;
-  line-height: 16px;
+  line-height: 0.843;
   padding-left: 7px;
   letter-spacing: 0.2px;
 }
@@ -825,7 +831,7 @@ header {
   font-size: 12px;
   color: #010101;
   padding-left: 8px;
-  line-height: 12px;
+  line-height: 1;
   padding-top: 2px;
 }
 
@@ -855,7 +861,7 @@ header {
   font-weight: 300;
   font-size: 13px;
   padding: 6px 0 0 0;
-  line-height: 20px;
+  line-height: 1.54;
   letter-spacing: 0.5px;
 }
 
@@ -917,7 +923,7 @@ header {
   padding: 0 10px 0 10px;
 }
 
-.news__item {
+.news_item {
   margin-bottom: 10px;
   font-family: "Geneva", sans-serif;
   font-weight: 300;
@@ -925,17 +931,17 @@ header {
   font-size: 13px;
 }
 
-.news__date_link {
+.news_item__date_link {
   text-decoration: none;
   color: #1a9dd7;
   font-size: 13px;
 }
 
-.news__text {
+.news_item__text {
   font-size: 13px;
 }
 
-.news__full_link {
+.news_item__full_link {
   display: block;
   margin: 7px 0 0 0;
   font-family: "Geneva", sans-serif;
@@ -1399,7 +1405,7 @@ header {
   .news__items_wrapper{
     padding: 0 38px 0 38px;
   }
-  .news__item{
+  .news_item{
     width: 29%;
     margin-bottom: 0;
   }

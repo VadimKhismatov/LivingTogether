@@ -13,12 +13,18 @@
     font-size:13px;
     
     & p{
-       line-height: 20px; 
+       line-height: 1.54; 
+       margin: 0 32px 0 0;
+    }
+
+    & p:last-child{
+        margin-top: 21px;
     }
 
     & ul{
         margin: 30px 0 30px 2px;
-        line-height: 20px;
+        line-height: 1.54;
+        padding: 0 0 0 19px;
     }
 
     & a{
@@ -85,7 +91,7 @@
     @include proximaBold;
     font-size: 19px;
     color: #353535;
-    line-height: 16px;
+    line-height: 0.843;
     padding-left: 7px;
     letter-spacing: 0.2px;
 }
@@ -94,7 +100,7 @@
     font-size: 12px;
     color: #010101;
     padding-left: 8px;
-    line-height: 12px;
+    line-height: 1;
     padding-top: 2px;
 }
 
@@ -128,7 +134,7 @@
     @include geneva;
     font-size: 13px;
     padding: 6px 0 0 0;
-    line-height: 20px;
+    line-height: 1.54;
     letter-spacing: 0.5px;
     
 

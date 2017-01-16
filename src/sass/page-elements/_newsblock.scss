@@ -52,7 +52,7 @@
     }
 }
 
-.news__item{
+.news_item{
     margin-bottom: 10px;
     @include geneva;
     color: $mainTextColor;
@@ -65,17 +65,17 @@
 }
 
 
-.news__date_link{
+.news_item__date_link{
     text-decoration: none;
     color: #1a9dd7;
     font-size: 13px;
 }
 
-.news__text{
+.news_item__text{
     font-size: 13px;   
 }
 
-.news__full_link{
+.news_item__full_link{
     display: block;
     margin: 7px 0 0 0;
     @include geneva;
