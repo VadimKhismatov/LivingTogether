@@ -1460,38 +1460,16 @@ header {
   }
   .menu--first{
     margin: 0 0 0 11px;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 636px;
   }
   .menu--second{
     margin: 8px 0 0 9px;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 669px;
   }
   .menu_item{
-    margin: 0 0 0 0;
+    margin: 0 26px 0 0;
   }
   .menu_item{
 
-    /*&--rent{
-            margin: 0 0 0 11px;
-        }
-        &--polls{
-            margin: 0 0 0 30px;
-        }
-        &--communication{
-            margin: 0 0 0 56px;
-        }
-        &--invest{
-            margin: 0 0 0 43px;
-        }
-        &--contacts{
-            margin: 0 0 0 54px;
-        }
+    /*
         &--news{
             margin: 0 0 0 9px;
         }
@@ -1510,6 +1488,21 @@ header {
   }
   .menu_item strong{
     text-decoration: underline;
+  }
+  .menu_item--rent{
+    margin: 0 30px 0 0;
+  }
+  .menu_item--polls{
+    margin: 0 56px 0 0;
+  }
+  .menu_item--communication{
+    margin: 0 43px 0 0;
+  }
+  .menu_item--invest{
+    margin: 0 54px 0 0;
+  }
+  .menu_item--contacts{
+    margin: 0 30px 0 0;
   }
   .menu__img{
     display: inline-block;
