@@ -1458,44 +1458,58 @@ header {
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
+  .menu--first{
+    margin: 0 0 0 11px;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 636px;
+  }
   .menu--second{
-    margin: 8px 0 0 8px;
+    margin: 8px 0 0 9px;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 669px;
   }
   .menu_item{
     margin: 0 0 0 0;
   }
+  .menu_item{
+
+    /*&--rent{
+            margin: 0 0 0 11px;
+        }
+        &--polls{
+            margin: 0 0 0 30px;
+        }
+        &--communication{
+            margin: 0 0 0 56px;
+        }
+        &--invest{
+            margin: 0 0 0 43px;
+        }
+        &--contacts{
+            margin: 0 0 0 54px;
+        }
+        &--news{
+            margin: 0 0 0 9px;
+        }
+        &--partners_livingtogether{
+            margin: 0px 0 0 26px;
+        }
+        &--question{
+            margin: 0 0 0 29px;
+        }
+        &--typical_decoration{
+            margin: 0px 0 0 20px;
+        }
+        &--club_cart{
+            margin: 0px 0 0 28px;
+        }*/
+  }
   .menu_item strong{
     text-decoration: underline;
-  }
-  .menu_item--rent{
-    margin: 0 0 0 11px;
-  }
-  .menu_item--polls{
-    margin: 0 0 0 30px;
-  }
-  .menu_item--communication{
-    margin: 0 0 0 56px;
-  }
-  .menu_item--invest{
-    margin: 0 0 0 43px;
-  }
-  .menu_item--contacts{
-    margin: 0 0 0 54px;
-  }
-  .menu_item--news{
-    margin: 0 0 0 1px;
-  }
-  .menu_item--partners_livingtogether{
-    margin: 0px 0 0 26px;
-  }
-  .menu_item--question{
-    margin: 0 0 0 29px;
-  }
-  .menu_item--typical_decoration{
-    margin: 0px 0 0 20px;
-  }
-  .menu_item--club_cart{
-    margin: 0px 0 0 28px;
   }
   .menu__img{
     display: inline-block;
@@ -1526,10 +1540,10 @@ header {
 
 @media only screen and (min-width: 1400px){
   .slider__link--left{
-    left: 120px;
+    left: 150px;
   }
   .slider__link--right{
-    right: 120px;
+    right: 198px;
   }
 }
 

@@ -77,7 +77,7 @@
         left: 60px;
     }
     @include rmin(1400){
-        left: 120px;
+        left: 150px;
     }
     @include rmin(1600){
         left: 240px;
@@ -96,7 +96,7 @@
         right: 60px;
     }
     @include rmin(1400){
-        right: 120px;
+        right: 198px;
     }
     @include rmin(1600){
         right: 240px;

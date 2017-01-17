@@ -62,8 +62,15 @@ header{
 }
 
 @include rmin(1200){
+    .menu--first{
+        margin: 0 0 0 11px;
+        justify-content: space-between;
+        width: 636px;
+    }
     .menu--second{
-        margin: 8px 0 0 8px;
+        margin: 8px 0 0 9px;
+        justify-content: space-between;
+        width: 669px;
     }
 }
 .menu_item{
@@ -84,7 +91,7 @@ header{
             text-decoration: underline;
         }
 
-        &--rent{
+        /*&--rent{
             margin: 0 0 0 11px;
         }
         &--polls{
@@ -100,7 +107,7 @@ header{
             margin: 0 0 0 54px;
         }
         &--news{
-            margin: 0 0 0 1px;
+            margin: 0 0 0 9px;
         }
         &--partners_livingtogether{
             margin: 0px 0 0 26px;
@@ -113,7 +120,7 @@ header{
         }
         &--club_cart{
             margin: 0px 0 0 28px;
-        }
+        }*/
     }
 }
 
