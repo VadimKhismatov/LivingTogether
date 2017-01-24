@@ -491,7 +491,7 @@ body {
 .slide {
   width: 287px;
   margin: 0 auto 0 auto;
-  padding: 41px 0 0 0px;
+  padding: 38px 0 0 0px;
   position: relative;
 }
 
@@ -1326,37 +1326,18 @@ body {
   }
   .top_menu{
     margin-left: 25px;
-    padding-top: 8px;
+    padding: 9px 0 0 36px;
   }
   .menu{
-    width: 100%;
-  }
-  .menu--first{
-    margin: 0 0 0 11px;
-  }
-  .menu--second{
-    margin: 8px 0 0 9px;
+    width: auto;
+    margin: 0 25px 0 0;
   }
   .menu_item{
-    margin: 0 26px 0 0;
+    margin: 0 0 9px 0;
+    float: none;
   }
   .menu_item strong{
     text-decoration: underline;
-  }
-  .menu_item--rent{
-    margin: 0 30px 0 0;
-  }
-  .menu_item--polls{
-    margin: 0 56px 0 0;
-  }
-  .menu_item--communication{
-    margin: 0 43px 0 0;
-  }
-  .menu_item--invest{
-    margin: 0 54px 0 0;
-  }
-  .menu_item--contacts{
-    margin: 0 30px 0 0;
   }
   .menu__img{
     display: inline-block;
