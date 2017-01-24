@@ -472,7 +472,7 @@ body {
   padding: 5px 0 5px 0;
   font-family: "Geneva", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875em;
   color: #2b2b2b;
 }
 
@@ -1347,7 +1347,7 @@ body {
     text-decoration: none;
   }
   .menu__link{
-    font-size: 12px;
+    font-size: 0.75em;
   }
   .slider__link{
     display: block;

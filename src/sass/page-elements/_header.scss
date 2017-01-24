@@ -115,11 +115,11 @@
         text-decoration: none;
     }
     @include geneva;
-    font-size: 14px;
+    font-size: 0.875em;
     color: $mainTextColor;
 
     @include rmin(1200){
-        font-size: 12px;
+        font-size: 0.75em;
 
     }
 }
