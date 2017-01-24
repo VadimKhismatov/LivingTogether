@@ -1,7 +1,7 @@
 /*partners block*/
 @include rmin(1024){
     .partners_block{
-        justify-content: center;
+
     }
 }
 .partners_block__title{
@@ -32,24 +32,27 @@
 }
 
 .partners{
-    display: flex;
-    flex-wrap: wrap;
+    overflow: hidden;
     margin-top: 22px;
     padding: 0 10px 0 10px;
     @include rmin(426){
-        justify-content: center;
+
     };
     @include rmin(1024){
-        justify-content: flex-start;
+
         padding: 0 0 0 18px;
     };
 }
 
 .partner{
+    float: left;
     width: 91px;
     height: 120px;
     margin-bottom: 10px;
     margin-right: 9px;
+    @include r(1199){
+        margin-right: auto;
+    }
 }
 
 .partner__text{

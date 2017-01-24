@@ -1,9 +1,8 @@
 /*information block*/
 .container--information{
- flex-direction: column;
 
  @include rmin(768){
-     flex-direction: row;
+
  }
 }
 .article{
@@ -25,6 +24,11 @@
         margin: 30px 0 30px 2px;
         line-height: 1.54;
         padding: 0 0 0 19px;
+        li{
+            &::before{
+                content: "-";
+            }
+        }
     }
 
     & a{
@@ -32,6 +36,7 @@
     }
     @include rmin(768){
         width:60%;
+        float: left;
     }
     
     @include rmin(1024){
@@ -42,7 +47,7 @@
 
 @include rmin(1024){
     .information_block{
-        justify-content: center;
+
     }
 }
 
@@ -54,6 +59,7 @@
 
     @include rmin(768){
         width: 40%;
+        float: right;
     }
     @include rmin(1024){
         width: 30%;
@@ -61,7 +67,7 @@
     }
 }
 .support{
-    display: flex;
+    overflow: hidden;
     padding: 1px 0 0 11px;
     
     @include rmin(1024){
@@ -71,12 +77,14 @@
 }
 
 .support__img{
+    float: left;
     width: 48px;
     height: 48px;
     margin-top: 12px;
 }
 
 .support__telephones{
+    float: left;
     width: 130px;
 }
 

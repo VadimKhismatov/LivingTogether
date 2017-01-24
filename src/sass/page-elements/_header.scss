@@ -1,6 +1,5 @@
 /*header*/
-header{
-  justify-content: center;
+.header{
   padding-top: 70px;
   background-image: url("../img/sky-bg.png");
   background-repeat: no-repeat;
@@ -8,33 +7,33 @@ header{
 }
 
 .container--head{
-    flex-direction: column;
-    align-content: center;
-    @include rmin(900){
-        flex-direction: row;
-        justify-content: space-around;
-    }
+
+    
     @include rmin(1200){
         max-width: 1170px;
-        flex-direction: row;
-        justify-content: flex-start;
+        margin: 0 auto;
     }
 }
 
 .logo{
     text-align: center;
+    
+    @include rmin(900){
+        float: left;
+    }
 }
 
 /*top menu*/
 
 .top_menu{
+    overflow: hidden;
     padding: 10px 0 0 0px;
     
     @include rmin(480){
-        display: flex;
+
     }
     @include rmin(590){
-        flex-direction: column;
+
     }
     @include rmin(1200){
         margin-left: 25px;
@@ -43,20 +42,20 @@ header{
 }
 
 .menu{
-    flex-direction: column;
+    text-align: center;
+    
     @include rmin(480){
         width: 50%;
-        align-items: center;       
+        float: left;     
 }
     @include rmin(590){
         width:100%;
-        flex-direction: row;
-        justify-content: space-around;
+        text-align: left;
+
     }
     @include rmin(1200){
         width:100%;
-        flex-direction: row;
-        justify-content: flex-start;
+
     }
     
 }
@@ -72,8 +71,11 @@ header{
     }
 }
 .menu_item{
-    display: flex;
-    justify-content: center;
+    @include rmin(590){
+        float: left;
+        margin: 0 7px 0 4px;
+    }
+
     @include rmin(900){
         margin: 0 10px 0 10px;
     }
@@ -103,22 +105,7 @@ header{
         &--contacts{
             margin: 0 30px 0 0;
         }
-        /*
-        &--news{
-            margin: 0 0 0 9px;
-        }
-        &--partners_livingtogether{
-            margin: 0px 0 0 26px;
-        }
-        &--question{
-            margin: 0 0 0 29px;
-        }
-        &--typical_decoration{
-            margin: 0px 0 0 20px;
-        }
-        &--club_cart{
-            margin: 0px 0 0 28px;
-        }*/
+        
     }
 }
 

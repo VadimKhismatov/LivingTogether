@@ -6,12 +6,11 @@
     border-top:1px solid #dadada;
 
     @include rmin(1024){
-        justify-content: center;
+
     }
 }
 .container--footer{
-    display: flex;
-    justify-content: space-between;
+    overflow:visible;
     position:relative;
 }
 
@@ -32,6 +31,7 @@
 }
 
 .footer__text{
+    float: left;
     margin: 16px 0 0 10px;
     @include geneva;
     font-size: 10px;
@@ -40,6 +40,10 @@
 
 .footer__text_link{
  color: #2896df;
+}
+
+.footer__logo_wrap{
+    float: right;
 }
 
 .footer__logo{
