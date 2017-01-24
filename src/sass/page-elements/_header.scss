@@ -1,0 +1,165 @@
+/*header*/
+header{
+  justify-content: center;
+  padding-top: 70px;
+  background-image: url("../img/sky-bg.png");
+  background-repeat: no-repeat;
+  background-position: center -339px;
+}
+
+.container--head{
+    flex-direction: column;
+    align-content: center;
+    @include rmin(900){
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    @include rmin(1200){
+        max-width: 1170px;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+.logo{
+    text-align: center;
+}
+
+/*top menu*/
+
+.top_menu{
+    padding: 10px 0 0 0px;
+    
+    @include rmin(480){
+        display: flex;
+    }
+    @include rmin(590){
+        flex-direction: column;
+    }
+    @include rmin(1200){
+        margin-left: 25px;
+        padding-top: 8px;
+    }
+}
+
+.menu{
+    flex-direction: column;
+    @include rmin(480){
+        width: 50%;
+        align-items: center;       
+}
+    @include rmin(590){
+        width:100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    @include rmin(1200){
+        width:100%;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+}
+
+@include rmin(1200){
+    .menu--first{
+        margin: 0 0 0 11px;
+        
+    }
+    .menu--second{
+        margin: 8px 0 0 9px;
+        
+    }
+}
+.menu_item{
+    display: flex;
+    justify-content: center;
+    @include rmin(900){
+        margin: 0 10px 0 10px;
+    }
+    @include rmin(1200){
+        margin: 0 26px 0 0;
+    }
+    span,strong{
+    font-weight: 300;
+    vertical-align: middle;
+    }
+    @include rmin(1200){
+        strong{
+            text-decoration: underline;
+        }
+        &--rent{
+            margin: 0 30px 0 0;
+        }
+        &--polls{
+            margin: 0 56px 0 0;
+        }
+        &--communication{
+            margin: 0 43px 0 0;
+        }
+        &--invest{
+            margin: 0 54px 0 0;
+        }
+        &--contacts{
+            margin: 0 30px 0 0;
+        }
+        /*
+        &--news{
+            margin: 0 0 0 9px;
+        }
+        &--partners_livingtogether{
+            margin: 0px 0 0 26px;
+        }
+        &--question{
+            margin: 0 0 0 29px;
+        }
+        &--typical_decoration{
+            margin: 0px 0 0 20px;
+        }
+        &--club_cart{
+            margin: 0px 0 0 28px;
+        }*/
+    }
+}
+
+
+
+@each $ic in rent, polls, communication,invest,contacts,news,partners, question, typical-decoration, club-cart{
+    .menu__img--#{$ic}{
+    @include s(#{$ic});
+
+    }
+}
+
+
+
+.menu__img{
+    display: none;
+    
+    @include rmin(1200){
+        display: inline-block;
+    }
+    /*width: 20px;
+    height: 20px;*/
+    background-repeat: no-repeat;
+}
+
+.menu__link{
+    display: block;
+    padding: 5px 0 5px 0;
+    
+    @include rmin(1200){
+        padding: 0 0 0 0;
+        text-decoration: none;
+    }
+    @include geneva;
+    font-size: 14px;
+    color: $mainTextColor;
+
+    @include rmin(1200){
+        font-size: 12px;
+
+    }
+}
+
+

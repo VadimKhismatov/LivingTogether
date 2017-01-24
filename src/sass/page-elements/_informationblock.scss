@@ -1,49 +1,73 @@
 /*information block*/
-.main_info{
-    width: 708px;
-    color: $mainTextColor;
-    padding: 45px 0 0 21px;
-}
+.container--information{
+ flex-direction: column;
 
-.main_info__text{
+ @include rmin(768){
+     flex-direction: row;
+ }
+}
+.article{
+    color: $mainTextColor;
+    padding: 45px 10px 0 10px;
     @include geneva;
     font-size:13px;
     
-}
-.main_info__paragraf{
-    line-height: 20px;
-}
-.info_list{
-    margin-top: 7px;
-    margin-bottom:10px;
-    padding-left: 16px;
-}
+    & p{
+       line-height: 1.54; 
+       margin: 0 32px 0 0;
+    }
 
-.info-list__item{
-    position: relative;
-    margin-bottom: 2px;
-    padding-left: 20px;
+    & p:last-child{
+        margin-top: 21px;
+    }
 
-    &::before{
-        content: "-";
-        position: absolute;
-        left:8px;
+    & ul{
+        margin: 30px 0 30px 2px;
+        line-height: 1.54;
+        padding: 0 0 0 19px;
+    }
+
+    & a{
+        color: #2f96cb;
+    }
+    @include rmin(768){
+        width:60%;
+    }
+    
+    @include rmin(1024){
+        width: 68%;
+        padding: 31px 0 0 14px;
     }
 }
 
-.main_info__link{
-    color: #2f96cb;
+@include rmin(1024){
+    .information_block{
+        justify-content: center;
+    }
 }
+
 
 /*technical block*/
 
 .tech_info{
-    width: 298px;
     padding-top: 46px;
+
+    @include rmin(768){
+        width: 40%;
+    }
+    @include rmin(1024){
+        width: 30%;
+        padding-top: 31px;
+    }
 }
 .support{
     display: flex;
     padding: 1px 0 0 11px;
+    
+    @include rmin(1024){
+        padding: 4px 0 0 17px;
+    }
+    
 }
 
 .support__img{
@@ -64,19 +88,19 @@
     letter-spacing: 0.2px;
 }
 .support__telephone-bold{
-    font-family: $proximaSemibold;
+    @include proximaBold;
     font-size: 19px;
     color: #353535;
-    line-height: 16px;
+    line-height: 0.843;
     padding-left: 7px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
 }
 .support__text{
     font-family: "Arial";
     font-size: 12px;
     color: #010101;
     padding-left: 8px;
-    line-height: 12px;
+    line-height: 1;
     padding-top: 2px;
 }
 
@@ -84,23 +108,40 @@
     padding: 21px 0 0 0px;
     color:$mainTextColor;
 }
-
+.club__img_wrapper{
+    text-align: center;
+    @include rmin(1024){
+        padding-left: 3px;
+    }
+}
 .club__info{
-    margin: 13px 0 0 49px;
+    margin: 13px 0 0 0;
+    padding: 0 10px 0 10px;
+
 }
 
 .club__title{
     @include proximaBold;
     font-size: 23px;
     letter-spacing: -0.3px;
+
+    @include rmin(1024){
+        padding-left: 43px;
+    }
 }
 
 .club__text{
     @include geneva;
     font-size: 13px;
     padding: 6px 0 0 0;
-    line-height: 20px;
+    line-height: 1.54;
     letter-spacing: 0.5px;
+    
+
+    @include rmin(1024){
+        padding: 7px 0 0 45px;
+        letter-spacing: 0.2px;
+    }
 }
 
 .club__link{
@@ -111,4 +152,8 @@
     color: $mainTextColor;
     opacity: .4;
     letter-spacing: 0.4px;
+
+    @include rmin(1024){
+        margin: 17px 0 0 44px;
+    }
 }

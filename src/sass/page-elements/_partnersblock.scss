@@ -1,11 +1,26 @@
 /*partners block*/
-
+@include rmin(1024){
+    .partners_block{
+        justify-content: center;
+    }
+}
 .partners_block__title{
     font-family: $proximaSemibold;
     font-size: 19px;
     color: $mainTextColor;
-    margin: 35px 0 0 23px;
+    margin: 35px 0 0 0;
     letter-spacing: -0.7px;
+    text-align: center;
+
+    @include rmin(900){
+        margin-left: 10px;
+        text-align: left;
+    }
+    @include rmin(1024){
+        margin-left: 38px;
+        text-align: left;
+        letter-spacing: -1.3px;
+    }
 }
 
 .partner__text{
@@ -20,16 +35,28 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 22px;
+    padding: 0 10px 0 10px;
+    @include rmin(426){
+        justify-content: center;
+    };
+    @include rmin(1024){
+        justify-content: flex-start;
+        padding: 0 0 0 18px;
+    };
 }
 
 .partner{
-    width: 100px;
+    width: 91px;
     height: 120px;
     margin-bottom: 10px;
+    margin-right: 9px;
 }
 
 .partner__text{
-    padding-right: 17px;
+    text-align: center;
+    @include rmin(1024){
+        text-align: left;
+    }
 }
 
 
@@ -45,5 +72,7 @@
 .partner__icon{
     display: block;
     margin-bottom: 10px;
+    margin-left:auto;
+    margin-right: auto;
     height: 76px;
 }

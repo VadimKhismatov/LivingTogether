@@ -22,21 +22,41 @@
           <!--TOP MENU begin-->
           <nav class="top_menu">
             <!--LIST begin-->
-            <ul class="menu menu--top block">
-              <li class="menu_item"><span class="menu__img menu__img--rent"></span><a class="menu__link menu__link--rent" href="#!">Аренда</a></li>
-              <li class="menu_item menu_item--polls"><span class="menu__img menu__img--polls"></span><a class="menu__link menu__link--polls" href="#!">Опросы и голосования</a></li>
-              <li class="menu_item menu_item--comunication"><span class="menu__img menu__img--communication"></span><a class="menu__link menu__link--communication" href="#!">Общение</a></li>
-              <li class="menu_item menu_item--invest"><span class="menu__img menu__img--invest"></span><a class="menu__link menu__link--invest" href="#!">Инвестиции</a></li>
-              <li class="menu_item menu_item--contacts"><span class="menu__img menu__img--contacts"></span><a class="menu__link menu__link--contacts" href="#!">Контакты</a></li>
+            <ul class="menu menu--first block">
+              <li class="menu_item menu_item--rent">
+                <a class="menu__link menu__link--rent" href="#!"> <span class="menu__img menu__img--rent"></span> <strong>Аренда</strong> </a>
+              </li>
+              <li class="menu_item menu_item--polls">
+                <a class="menu__link menu__link--polls" href="#!"> <span class="menu__img menu__img--polls"></span> <strong>Опросы и голосования</strong> </a>
+              </li>
+              <li class="menu_item menu_item--communication">
+                <a class="menu__link menu__link--communication" href="#!"> <span class="menu__img menu__img--communication"></span> <strong>Общение</strong> </a>
+              </li>
+              <li class="menu_item menu_item--invest">
+                <a class="menu__link menu__link--invest" href="#!"> <span class="menu__img menu__img--invest"></span> <strong>Инвестиции</strong> </a>
+              </li>
+              <li class="menu_item menu_item--contacts">
+                <a class="menu__link menu__link--contacts" href="#!"> <span class="menu__img menu__img--contacts"></span> <strong>Контакты</strong> </a>
+              </li>
             </ul>
             <!--LIST end-->
             <!--LIST start-->
-            <ul class="menu block">
-              <li class="menu_item"><span class="menu__img menu__img--news"></span><a class="menu__link menu__link--news" href="#!">Новости</a></li>
-              <li class="menu_item menu_item--partners_livingtogether"><span class="menu__img menu__img--partners"></span><a class="menu__link menu__link--partners" href="#!">Партнеры &laquo;Живём вместе &raquo;</a></li>
-              <li class="menu_item menu_item--question"><span class="menu__img menu__img--question"></span><a class="menu__link menu__link--question" href="#!">есть вопрос?</a></li>
-              <li class="menu_item menu_item--typical_decoration"><span class="menu__img menu__img--typical-decoration"></span><a class="menu__link menu__link--typical-decoration" href="#!">Типовая отделка</a></li>
-              <li class="menu_item menu_item--club_cart"><span class="menu__img menu__img--club-cart"></span><a class="menu__link menu__link--club-cart" href="#!">Клубная карта</a></li>
+            <ul class="menu menu--second block">
+              <li class="menu_item menu_item--news">
+                <a class="menu__link menu__link--news" href="#!"> <span class="menu__img menu__img--news"></span> <strong>Новости</strong> </a>
+              </li>
+              <li class="menu_item menu_item--partners_livingtogether">
+                <a class="menu__link menu__link--partners" href="#!"> <span class="menu__img menu__img--partners"></span> <strong>Партнеры «Живём вместе»</strong> </a>
+              </li>
+              <li class="menu_item menu_item--question">
+                <a class="menu__link menu__link--question" href="#!"> <span class="menu__img menu__img--question"></span> <strong>есть вопрос?</strong> </a>
+              </li>
+              <li class="menu_item menu_item--typical_decoration">
+                <a class="menu__link menu__link--typical-decoration" href="#!"> <span class="menu__img menu__img--typical-decoration"></span> <strong>Типовая отделка</strong> </a>
+              </li>
+              <li class="menu_item menu_item--club_cart">
+                <a class="menu__link menu__link--club-cart" href="#!"> <span class="menu__img menu__img--club-cart"></span> <strong>Клубная карта</strong> </a>
+              </li>
             </ul>
             <!--LIST end-->
           </nav>
@@ -48,125 +68,132 @@
       <section class="slider_block block">
         <section class="container container--slider block">
           <a href="#!" class="slider__link slider__link--left"></a>
-          <div class="slider block">
+          <div class="slider">
             <!--COLUMN begin-->
             <div class="slide block">
-              <div class="head">
-                <h3 class="head__type">Жилой комплекс</h3>
+              <div class="head"> <span class="head__type">Жилой комплекс</span>
                 <h1 class="head__title">Одинцовский парк</h1>
               </div>
-              <div class="slide__img_wrapper"> <img src="img/park-odintsovo.png" class="slide__img" /> </div>
-              <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта"> <input type="text" class="authorisation__input authorisation__input--login" placeholder="Логин">
+              <div class="slide__img_wrapper"> <img src="img/park-odintsovo.jpg" class="slide__img" /> </div>
+              <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта">
+                <div class="authorisation__icon--email"></div> <input type="text" class="authorisation__input " placeholder="Логин">
+                <div class="authorisation__icon--login"></div>
                 <div class="authorisation__controls_block">
                   <div class="authorisation__links_wrapper"> <a href="#!" class="authorisation__link">Забыли пароль?</a> <a href="#!" class="authorisation__link">Регистрация</a> </div>
                   <div> <input type="submit" class="authorisation__submit" value="Войти"> </div>
                 </div>
               </form>
-              <div class="additional_info">
-                <p class="additional_info__tel">Продажи <span class="additional_info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
+              <div class="info">
+                <p class="info__tel">Продажи <span class="info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
                 <div class="location_wrapper">
-                  <p class="additional_info__location_icon"></p> <a class="additional_info__location_link" href="#!">Как добраться до объекта?</a> </div>
+                  <p class="info__location_icon"></p> <a class="info__location_link" href="#!">Как добраться до объекта?</a> </div>
               </div>
             </div>
             <!--COLUMN end-->
             <!--COLUMN begin-->
             <div class="slide block">
-              <div class="head">
-                <h3 class="head__type">Жилой комплекс</h3>
+              <div class="head"> <span class="head__type">Жилой комплекс</span>
                 <h1 class="head__title">Новые Ватутинки</h1>
               </div>
-              <div class="slide__img_wrapper"> <img src="img/new-vatutino.png" class="slide__img" /> </div>
+              <div class="slide__img_wrapper"> <img src="img/new-vatutino.jpg" class="slide__img" /> </div>
               <div class="additional_img_wrapper"> <img src="img/vatutino-extra.png" class="slide__additional_img" /> </div>
-              <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта"> <input type="text" class="authorisation__input authorisation__input--login" placeholder="Логин">
+              <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта">
+                <div class="authorisation__icon--email"></div> <input type="text" class="authorisation__input " placeholder="Логин">
+                <div class="authorisation__icon--login"></div>
                 <div class="authorisation__controls_block">
                   <div class="authorisation__links_wrapper"> <a href="#!" class="authorisation__link">Забыли пароль?</a> <a href="#!" class="authorisation__link">Регистрация</a> </div>
                   <div> <input type="submit" class="authorisation__submit" value="Войти"> </div>
                 </div>
               </form>
-              <div class="additional_info">
-                <p class="additional_info__tel">Продажи <span class="additional_info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
+              <div class="info">
+                <p class="info__tel">Продажи <span class="info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
                 <div class="location_wrapper">
-                  <p class="additional_info__location_icon"></p> <a class="additional_info__location_link" href="#!">Как добраться до объекта?</a> </div>
+                  <p class="info__location_icon"></p> <a class="info__location_link" href="#!">Как добраться до объекта?</a> </div>
               </div>
             </div>
             <!--COLUMN end-->
             <!--COLUMN begin-->
             <div class="slide block">
-              <div class="head">
-                <h3 class="head__type">Жилой комплекс</h3>
+              <div class="head"> <span class="head__type">Жилой комплекс</span>
                 <h1 class="head__title">Новое Бутово</h1>
               </div>
-              <div class="slide__img_wrapper"> <img src="img/new-butovo.png" class="slide__img" /> </div>
-              <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта"> <input type="text" class="authorisation__input authorisation__input--login" placeholder="Логин">
+              <div class="slide__img_wrapper"> <img src="img/new-butovo.jpg" class="slide__img" /> </div>
+              <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта">
+                <div class="authorisation__icon--email"></div> <input type="text" class="authorisation__input " placeholder="Логин">
+                <div class="authorisation__icon--login"></div>
                 <div class="authorisation__controls_block">
                   <div class="authorisation__links_wrapper"> <a href="#!" class="authorisation__link">Забыли пароль?</a> <a href="#!" class="authorisation__link">Регистрация</a> </div>
                   <div> <input type="submit" class="authorisation__submit" value="Войти"> </div>
                 </div>
               </form>
-              <div class="additional_info">
-                <p class="additional_info__tel">Продажи <span class="additional_info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
+              <div class="info">
+                <p class="info__tel">Продажи <span class="info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
                 <div class="location_wrapper">
-                  <p class="additional_info__location_icon"></p> <a class="additional_info__location_link" href="#!">Как добраться до объекта?</a> </div>
+                  <p class="info__location_icon"></p> <a class="info__location_link" href="#!">Как добраться до объекта?</a> </div>
               </div>
             </div>
             <!--COLUMN end-->
             <!--COLUMN begin-->
             <div class="slide block">
-              <div class="head">
-                <h3 class="head__type">Жилой комплекс</h3>
+              <div class="head"> <span class="head__type">Жилой комплекс</span>
                 <h1 class="head__title">Одинцовский парк</h1>
               </div>
-              <div class="slide__img_wrapper"> <img src="img/park-odintsovo.png" class="slide__img" /> </div>
-              <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта"> <input type="text" class="authorisation__input authorisation__input--login" placeholder="Логин">
+              <div class="slide__img_wrapper"> <img src="img/park-odintsovo.jpg" class="slide__img" /> </div>
+              <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта">
+                <div class="authorisation__icon--email"></div> <input type="text" class="authorisation__input " placeholder="Логин">
+                <div class="authorisation__icon--login"></div>
                 <div class="authorisation__controls_block">
                   <div class="authorisation__links_wrapper"> <a href="#!" class="authorisation__link">Забыли пароль?</a> <a href="#!" class="authorisation__link">Регистрация</a> </div>
                   <div> <input type="submit" class="authorisation__submit" value="Войти"> </div>
                 </div>
               </form>
-              <div class="additional_info">
-                <p class="additional_info__tel">Продажи <span class="additional_info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
+              <div class="info">
+                <p class="info__tel">Продажи <span class="info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
                 <div class="location_wrapper">
-                  <p class="additional_info__location_icon"></p> <a class="additional_info__location_link" href="#!">Как добраться до объекта?</a> </div>
+                  <p class="info__location_icon"></p> <a class="info__location_link" href="#!">Как добраться до объекта?</a> </div>
               </div>
             </div>
             <!--COLUMN end-->
             <!--COLUMN begin-->
             <div class="slide block">
-              <div class="head">
-                <h3 class="head__type">Жилой комплекс</h3>
+              <div class="head"> <span class="head__type">Жилой комплекс</span>
                 <h1 class="head__title">Новые Ватутинки</h1>
               </div>
-              <div class="slide__img_wrapper"> <img src="img/new-vatutino.png" class="slide__img" /> </div>
-              <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта"> <input type="text" class="authorisation__input authorisation__input--login" placeholder="Логин">
+              <div class="slide__img_wrapper"> <img src="img/new-vatutino.jpg" class="slide__img" /> </div>
+              <div class="additional_img_wrapper"> <img src="img/vatutino-extra.png" class="slide__additional_img" /> </div>
+              <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта">
+                <div class="authorisation__icon--email"></div> <input type="text" class="authorisation__input " placeholder="Логин">
+                <div class="authorisation__icon--login"></div>
                 <div class="authorisation__controls_block">
                   <div class="authorisation__links_wrapper"> <a href="#!" class="authorisation__link">Забыли пароль?</a> <a href="#!" class="authorisation__link">Регистрация</a> </div>
                   <div> <input type="submit" class="authorisation__submit" value="Войти"> </div>
                 </div>
               </form>
-              <div class="additional_info">
-                <p class="additional_info__tel">Продажи <span class="additional_info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
+              <div class="info">
+                <p class="info__tel">Продажи <span class="info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
                 <div class="location_wrapper">
-                  <p class="additional_info__location_icon"></p> <a class="additional_info__location_link" href="#!">Как добраться до объекта?</a> </div>
+                  <p class="info__location_icon"></p> <a class="info__location_link" href="#!">Как добраться до объекта?</a> </div>
               </div>
             </div>
             <!--COLUMN end-->
             <!--COLUMN begin-->
             <div class="slide block">
-              <div class="head">
-                <h3 class="head__type">Жилой комплекс</h3>
+              <div class="head"> <span class="head__type">Жилой комплекс</span>
                 <h1 class="head__title">Новое Бутово</h1>
               </div>
-              <div class="slide__img_wrapper"> <img src="img/new-butovo.png" class="slide__img" /> </div>
-              <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта"> <input type="text" class="authorisation__input authorisation__input--login" placeholder="Логин">
+              <div class="slide__img_wrapper"> <img src="img/new-butovo.jpg" class="slide__img" /> </div>
+              <form class="authorisation"> <input type="email" class="authorisation__input authorisation__input--email" placeholder="Электронная почта">
+                <div class="authorisation__icon--email"></div> <input type="text" class="authorisation__input " placeholder="Логин">
+                <div class="authorisation__icon--login"></div>
                 <div class="authorisation__controls_block">
                   <div class="authorisation__links_wrapper"> <a href="#!" class="authorisation__link">Забыли пароль?</a> <a href="#!" class="authorisation__link">Регистрация</a> </div>
                   <div> <input type="submit" class="authorisation__submit" value="Войти"> </div>
                 </div>
               </form>
-              <div class="additional_info">
-                <p class="additional_info__tel">Продажи <span class="additional_info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
+              <div class="info">
+                <p class="info__tel">Продажи <span class="info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
                 <div class="location_wrapper">
-                  <p class="additional_info__location_icon"></p> <a class="additional_info__location_link" href="#!">Как добраться до объекта?</a> </div>
+                  <p class="info__location_icon"></p> <a class="info__location_link" href="#!">Как добраться до объекта?</a> </div>
               </div>
             </div>
             <!--COLUMN end-->
@@ -177,26 +204,29 @@
       <!--SLIDER BLOCK end-->
       <!--INFORMATION BLOCK begin-->
       <section class="information_block block">
-        <section class="container block">
+        <section class="container container--information block">
           <!--MAIN_INFO begin-->
-          <section class="main_info">
-            <p class="main_info__text main_info__paragraf"> «Живем вместе» - особенный проект, созданный специально для наших покупателей, которые <br/>приобрели квартиру в «БЕСТ-Новострой». Приобретая квартиру в «БЕСТ-Новострой», Вы можете <br/>стать членом нашего клуба «Живем вместе» и иметь доступ
-              к актуальной информации о вашем </br> комплексе. Получив Клубную Карту программы, Вы сможете пользоваться специальным пакетом </br> привилегированных услуг: </p>
-            </br>
-            <ul class="main_info__text info_list">
-              <li class="info-list__item">Партнёрская Программа (Вы получите скидки на товары и услуги по Клубной Карте);</li>
-              <li class="info-list__item">Полезная Информация о вашем комплексе и ближайших обслуживающих организаций;</li>
-              <li class="info-list__item">Удобный доступ к документам, планировкам и шахматке;</li>
-              <li class="info-list__item">регулярное освещение хода строительства;</li>
-              <li class="info-list__item">лента новостей по жилому комплексу;</li>
-              <li class="info-list__item">онлайн-заявки для различных целей (напр: машиноместа, типовая отделка и т.д.);</li>
-              <li class="info-list__item">площадка для общения между жильцами комплекса (форум).</li>
+          <section class="article">
+            <p> «Живем вместе» - особенный проект, созданный специально для наших покупателей, которые приобрели квартиру в «БЕСТ-Новострой». Приобретая квартиру в «БЕСТ-Новострой», Вы можете стать членом нашего клуба «Живем вместе» и иметь доступ к актуальной
+              информации о вашем комплексе. Получив Клубную Карту программы, Вы сможете пользоваться специальным пакетом привилегированных услуг: </p>
+            <!--   <br>
+    <br>
+    <br>-->
+            <ul>
+              <li> - Партнёрская Программа (Вы получите скидки на товары и услуги по Клубной Карте);</li>
+              <li> - Полезная Информация о вашем комплексе и ближайших обслуживающих организаций;</li>
+              <li> - Удобный доступ к документам, планировкам и шахматке;</li>
+              <li> - регулярное освещение хода строительства;</li>
+              <li> - лента новостей по жилому комплексу;</li>
+              <li> - онлайн-заявки для различных целей (напр: машиноместа, типовая отделка и т.д.);</li>
+              <li> - площадка для общения между жильцами комплекса (форум).</li>
             </ul>
-            </br>
-            <p class="main_info__text main_info__paragraf"> И это далеко не всё, что вы можете узнать на сайте: <a href="#!" class="main_info__link">vmeste-bn.ru</a> </br>Нам важно, чтобы Вы жили с комфортом и стали хорошими соседями друг для друга. </br>ВМЕСТЕ мы создаем жилую среду — комплекс, который
-              в будущем будет приносить вам радость и </br>уют. Начиная с покупки квартиры и даже после заселения, мы будем рядом, чтобы помогать</br> благоустраивать ваш жилой комплекс.</br>
-              </br>Участвуйте в проекте «Живем вместе», это поможет сделать жизнь вашего дома яркой, насыщенной, </br> и конечно, удобной! Делитесь своими мыслями и предложениями, а мы – «БЕСТ-Новострой»— </br>окажем всевозможное содействие в создании жилья
-              Вашей мечты! </p>
+            <p> И это далеко не всё, что вы можете узнать на сайте: <a href="#!">vmeste-bn.ru</a>
+              <p>Нам важно, чтобы Вы жили с комфортом и стали хорошими соседями друг для друга.</p>
+              <p> ВМЕСТЕ мы создаем жилую среду — комплекс, который в будущем будет приносить вам радость и уют. Начиная с покупки квартиры и даже после заселения, мы будем рядом, чтобы помогать благоустраивать ваш жилой комплекс.</p>
+            </p>
+            <p> Участвуйте в проекте «Живем вместе», это поможет сделать жизнь вашего дома яркой, насыщенной, и конечно, удобной! Делитесь своими мыслями и предложениями, а мы – «БЕСТ-Новострой» - окажем всевозможное содействие в создании жилья Вашей мечты!
+              </p>
           </section>
           <!--MAIN_INFO end-->
           <!--TECH_INFO begin-->
@@ -208,7 +238,8 @@
                 <p class="support__text">техническая поддержка</p>
               </div>
             </div>
-            <div class="club"> <img src="img/club_cart.png" alt="club cart image" />
+            <div class="club">
+              <div class="club__img_wrapper"> <img src="img/club_cart.png" alt="club cart image" class="club__img" /> </div>
               <div class="club__info">
                 <h1 class="club__title">Клубная карта</h1>
                 <p class="club__text">Клубная карта дает возможность получить доступ к личному кабинету объекта и получать важную информацию</p> <a href="#!" class="club__link">подробнее</a> </div>
@@ -228,19 +259,19 @@
             <!--NEWS_PANEL end-->
             <div class="news__items_wrapper">
               <!--NEWS ITEM begin-->
-              <div class="news__item">
-                <p class="news__item_data"> <a href="#!" class="news__item_data_link">12 мая 2013</a> </p>
-                <p class="news__item_text"> Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет. </p> <a href="#!" class="news__item_full_link">подробнее</a> </div>
+              <div class="news_item">
+                <p class="news_item__date"> <a href="#!" class="news_item__date_link">12 мая 2013</a> </p>
+                <p class="news_item__text"> Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет. </p> <a href="#!" class="news_item__full_link">подробнее</a> </div>
               <!--NEWS ITEM end-->
               <!--NEWS ITEM begin-->
-              <div class="news__item">
-                <p class="news__item_data"> <a href="#!" class="news__item_data_link">12 мая 2013</a> </p>
-                <p class="news__item_text"> Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет. </p> <a href="#!" class="news__item_full_link">подробнее</a> </div>
+              <div class="news_item">
+                <p class="news_item__date"> <a href="#!" class="news_item__date_link">12 мая 2013</a> </p>
+                <p class="news_item__text"> Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет. </p> <a href="#!" class="news_item__full_link">подробнее</a> </div>
               <!--NEWS ITEM end-->
               <!--NEWS ITEM begin-->
-              <div class="news__item">
-                <p class="news__item_data"> <a href="#!" class="news__item_data_link">12 мая 2013</a> </p>
-                <p class="news__item_text"> Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет. </p> <a href="#!" class="news__item_full_link">подробнее</a> </div>
+              <div class="news_item">
+                <p class="news_item__date"> <a href="#!" class="news_item__date_link">12 мая 2013</a> </p>
+                <p class="news_item__text"> Хоккеист Ничушкин планирует провести следующий сезон в НХЛ. Матч за Суперкубок России по футболу пройдет. </p> <a href="#!" class="news_item__full_link">подробнее</a> </div>
               <!--NEWS ITEM end-->
             </div>
           </div>

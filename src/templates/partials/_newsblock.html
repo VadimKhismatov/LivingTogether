@@ -11,15 +11,15 @@
 
         {% for news in data.news%}
         <!--NEWS ITEM begin-->
-        <div class="news__item">
-            <p class="news__item_data">
-                <a href="#!" class="news__item_data_link">{{news.date}}</a>
+        <div class="news_item">
+            <p class="news_item__date">
+                <a href="#!" class="news_item__date_link">{{news.date}}</a>
             </p>
 
-            <p class="news__item_text">
+            <p class="news_item__text">
                 {{news.text}}
             </p>
-            <a href="#!" class="news__item_full_link">подробнее</a>
+            <a href="#!" class="news_item__full_link">подробнее</a>
         </div>
         <!--NEWS ITEM end-->
         {%endfor%}

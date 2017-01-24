@@ -1,20 +1,27 @@
 /*footer*/
 .footer{
-    position:relative;
     margin: 39px 0 0 0;
     height: 167px;
     box-sizing: border-box;
     border-top:1px solid #dadada;
+
+    @include rmin(1024){
+        justify-content: center;
+    }
 }
 .container--footer{
     display: flex;
     justify-content: space-between;
+    position:relative;
 }
 
 .footer__title{
     position: absolute;
     top: -8px;
-    left: 388px;
+    left: 0;
+    @include rmin(1200){
+        left: -41px;
+    }
     width: 261px;
     background-color: #fff;
     font-family: $proximaSemibold;
@@ -25,7 +32,7 @@
 }
 
 .footer__text{
-    margin: 16px 0 0 1px;
+    margin: 16px 0 0 10px;
     @include geneva;
     font-size: 10px;
     color: #7d7d7d;
@@ -37,4 +44,8 @@
 
 .footer__logo{
     margin: 10px 15px 0 0;
+
+    @include rmin(1200){
+        margin: 10px 25px 0 0;
+    }
 }
