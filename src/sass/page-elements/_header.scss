@@ -1,6 +1,5 @@
 /*header*/
-header{
-  justify-content: center;
+.header{
   padding-top: 70px;
   background-image: url("../img/sky-bg.png");
   background-repeat: no-repeat;
@@ -8,77 +7,71 @@ header{
 }
 
 .container--head{
-    flex-direction: column;
-    align-content: center;
-    @include rmin(900){
-        flex-direction: row;
-        justify-content: space-around;
-    }
+
+    
     @include rmin(1200){
         max-width: 1170px;
-        flex-direction: row;
-        justify-content: flex-start;
+        margin: 0 auto;
     }
 }
 
 .logo{
     text-align: center;
+
+    @include rmin(900){
+        float: left;
+    }
 }
 
 /*top menu*/
 
 .top_menu{
+    overflow: hidden;
     padding: 10px 0 0 0px;
     
     @include rmin(480){
-        display: flex;
+
     }
     @include rmin(590){
-        flex-direction: column;
+
     }
     @include rmin(1200){
         margin-left: 25px;
-        padding-top: 8px;
+        padding: 9px 0 0 36px;
     }
 }
 
 .menu{
-    flex-direction: column;
+    text-align: center;
+    
     @include rmin(480){
         width: 50%;
-        align-items: center;       
+        float: left;     
 }
     @include rmin(590){
         width:100%;
-        flex-direction: row;
-        justify-content: space-around;
+        text-align: left;
+
     }
     @include rmin(1200){
-        width:100%;
-        flex-direction: row;
-        justify-content: flex-start;
+        width: auto;
+        margin: 0 25px 0 0;
+
     }
     
 }
-
-@include rmin(1200){
-    .menu--first{
-        margin: 0 0 0 11px;
-        
-    }
-    .menu--second{
-        margin: 8px 0 0 9px;
-        
-    }
-}
 .menu_item{
-    display: flex;
-    justify-content: center;
+    @include rmin(590){
+        float: left;
+        margin: 0 7px 0 4px;
+    }
+
     @include rmin(900){
         margin: 0 10px 0 10px;
     }
     @include rmin(1200){
-        margin: 0 26px 0 0;
+        margin: 0 0 9px 0;
+        float: none;
     }
     span,strong{
     font-weight: 300;
@@ -88,37 +81,6 @@ header{
         strong{
             text-decoration: underline;
         }
-        &--rent{
-            margin: 0 30px 0 0;
-        }
-        &--polls{
-            margin: 0 56px 0 0;
-        }
-        &--communication{
-            margin: 0 43px 0 0;
-        }
-        &--invest{
-            margin: 0 54px 0 0;
-        }
-        &--contacts{
-            margin: 0 30px 0 0;
-        }
-        /*
-        &--news{
-            margin: 0 0 0 9px;
-        }
-        &--partners_livingtogether{
-            margin: 0px 0 0 26px;
-        }
-        &--question{
-            margin: 0 0 0 29px;
-        }
-        &--typical_decoration{
-            margin: 0px 0 0 20px;
-        }
-        &--club_cart{
-            margin: 0px 0 0 28px;
-        }*/
     }
 }
 
@@ -153,11 +115,11 @@ header{
         text-decoration: none;
     }
     @include geneva;
-    font-size: 14px;
+    font-size: 0.875em;
     color: $mainTextColor;
 
     @include rmin(1200){
-        font-size: 12px;
+        font-size: 0.75em;
 
     }
 }

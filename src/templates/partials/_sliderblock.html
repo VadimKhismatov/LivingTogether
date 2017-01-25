@@ -1,7 +1,7 @@
 {% import "data/data.html" as data %} {% for slide in data.slides %}
 <!--COLUMN begin-->
 
-<div class="slide block">
+<div class="slide">
 
     <div class="head">
 
@@ -30,7 +30,7 @@
                 <a href="#!" class="authorisation__link">Забыли пароль?</a>
                 <a href="#!" class="authorisation__link">Регистрация</a>
             </div>
-            <div>
+            <div class="authorisation__submit_wrap">
                 <input type="submit" class="authorisation__submit" value="Войти">
             </div>
         </div>
@@ -39,7 +39,7 @@
     <div class="info">
         <p class="info__tel">Продажи <span class="info__tel--bold"> &nbsp; +7 495 995-15-25</span></p>
         <div class="location_wrapper">
-            <p class="info__location_icon"></p>
+            <span class="info__location_icon"></span>
             <a class="info__location_link" href="#!">Как добраться до объекта?</a>
         </div>
     </div>
