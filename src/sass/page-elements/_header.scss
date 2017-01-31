@@ -81,6 +81,7 @@
     @include rmin(1200){
         strong{
             text-decoration: underline;
+            margin-left: 25px;
         }
     }
 }
@@ -93,18 +94,7 @@
 
     }
 }
-@include rmin(1200){
-    .menu__img--polls{
-        margin-left: 5px;
-    }
-    .menu__img--communication{
-        margin-left: 1px;
-    }
-    .menu__img--invest{
-        margin-left: 2px;
-    }
 
-}
 
 
 .menu__img{
@@ -112,6 +102,9 @@
     
     @include rmin(1200){
         display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
     /*width: 20px;
     height: 20px;*/
@@ -125,6 +118,7 @@
     @include rmin(1200){
         padding: 0 0 0 0;
         text-decoration: none;
+        position: relative;
     }
     @include geneva;
     font-size: 0.875em;
