@@ -1346,8 +1346,14 @@ body {
   .menu_item strong{
     text-decoration: underline;
   }
-  .menu_item--partners_livingtogether{
-    margin-left: -6px;
+  .menu__img--polls{
+    margin-left: 5px;
+  }
+  .menu__img--communication{
+    margin-left: 1px;
+  }
+  .menu__img--invest{
+    margin-left: 2px;
   }
   .menu__img{
     display: inline-block;
