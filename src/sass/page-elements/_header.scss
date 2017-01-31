@@ -85,11 +85,6 @@
     }
 }
 
-.menu_item--partners_livingtogether{
-    @include rmin(1200){
-        margin-left: -6px;
-    }
-}
 
 
 @each $ic in rent, polls, communication,invest,contacts,news,partners, question, typical-decoration, club-cart{
@@ -98,7 +93,18 @@
 
     }
 }
+@include rmin(1200){
+    .menu__img--polls{
+        margin-left: 5px;
+    }
+    .menu__img--communication{
+        margin-left: 1px;
+    }
+    .menu__img--invest{
+        margin-left: 2px;
+    }
 
+}
 
 
 .menu__img{
