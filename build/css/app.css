@@ -1345,22 +1345,20 @@ body {
   }
   .menu_item strong{
     text-decoration: underline;
-  }
-  .menu__img--polls{
-    margin-left: 5px;
-  }
-  .menu__img--communication{
-    margin-left: 1px;
-  }
-  .menu__img--invest{
-    margin-left: 2px;
+    margin-left: 25px;
   }
   .menu__img{
     display: inline-block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   .menu__link{
     padding: 0 0 0 0;
     text-decoration: none;
+    position: relative;
   }
   .menu__link{
     font-size: 0.75em;
